@@ -1,7 +1,8 @@
 import React from "react";
 
 import {colorsRoles, gradient, projectColors, methodoColors, colors} from "./Colors";
-import {EvergreenProject, SkillsAnimals, imagesProjects, SamsungProject, KiaProject, TelenetProject,ClavieProject, SoSmartProject} from "./Images-UXUI";
+import {EvergreenProject, SkillsAnimals, SamsungProject, KiaProject, TelenetProject} from "./Images-UXUI";
+import {ClavieProject, ParentrepriseProject, SoSmartProject} from "../01 Atoms/Images-Developer";
 import {
     Sketch,
     RawSketch,
@@ -434,6 +435,52 @@ export const CreativeDeveloperProjects = [
                 srcDesktop: SoSmartProject.SoSmartFolio01,
                 srcMobile: SoSmartProject.SoSmartFolio01,
                 altImg: "So smart project portfolio",
+                bgColor: colors.PureWhite,
+            },
+        ]
+
+    },
+    {
+        title: "Parentreprise",
+        skill: "Creative Developer",
+        fields: "Integration HTML/CSS",
+        description: "Parentreprise work on employee satisfaction with effective, new and original methods.Work for fulfillment and promote change in employees in all spheres of life.",
+        madeWith: [
+            Html5,
+            Sass,
+            Javascript
+        ],
+        roles: [
+            {
+                titlerole: "Team",
+                descriptionrole:"6 people",
+            },
+            {
+                titlerole: "Role",
+                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+            },
+            {
+                titlerole: "Time",
+                descriptionrole:"Around 4 mounths",
+            },
+        ],
+        slug: "Parentreprise",
+        headerImage: ParentrepriseProject.ParentrepriseHeader,
+        decorativeimage: ParentrepriseProject.ParentrepriseDeco,
+        maincolor: projectColors.Parentreprise,
+        FieldTextColorVisible: projectColors.Evergreen,
+        thumbnailproject : ParentrepriseProject.ParentrepriseThumbnail,
+        methodology: [
+            Sketch,
+            Html5,
+            CSS3,
+            Git
+        ],
+        images: [
+            {
+                srcDesktop: ParentrepriseProject.ParentrepriseFolio01,
+                srcMobile: ParentrepriseProject.ParentrepriseFolio01,
+                altImg: "Parentreprise project portfolio",
                 bgColor: colors.PureWhite,
             },
         ]
