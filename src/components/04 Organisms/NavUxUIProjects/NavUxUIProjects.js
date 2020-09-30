@@ -47,8 +47,8 @@ const NavUxUIProjects = (props) => {
         const Bg4 = projectColors.Telenet;
 
         setYPos({YPos:lastScrollY});
-        console.log(lastScrollY);
-        console.log(refTop);
+       // console.log(lastScrollY);
+        // console.log(refTop);
 
 
         if (MediaQueryDesktop.matches) {
