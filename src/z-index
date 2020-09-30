@@ -1,0 +1,19 @@
+
+ -1 ================
+
+  Skillheader > HeaderWrapper > :after
+
+ 1 ================
+
+  DisciplineNavItemWrapper > ImgShadow
+  Skillheader > Picture
+
+ 2 ================
+
+
+ DisciplineNavItemWrapper > img
+   AboutPage
+
+  3 ================
+
+   HeaderWrapper (HeaderNavigation)
