@@ -10,6 +10,7 @@ import PhotoRetoucherProjects from "../05 Pages/PhotoRetoucherProjects";
 import UiUxDesignProjectTemplate from "../05 Pages/UiUxDesignProjectTemplate";
 import {pathuiux, pathdev, pathphoto, pathabout} from "../01 Atoms/Data";
 import CreativeDeveloperProjectTemplate from "../05 Pages/CreativeDeveloperProjectTemplate";
+import PhotoRetoucherProjectTemplate from "../05 Pages/PhotoRetoucherProjectTemplate";
 
 
 const Routes = [
@@ -47,8 +48,12 @@ const Routes = [
         path: pathdev+"/:slug",
         exact: true,
         component : CreativeDeveloperProjectTemplate,
+    },
+    {
+        path: pathphoto+"/:slug",
+        exact: true,
+        component : PhotoRetoucherProjectTemplate,
     }
-
 ]
 
 const AppRoutes = () => {
