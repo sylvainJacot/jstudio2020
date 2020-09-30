@@ -19,6 +19,8 @@ import GitLogo from "../../media/icons/methodology/git.svg";
 import BootstrapLogo from "../../media/icons/methodology/Bootstrap.svg";
 import Css3Logo from "../../media/icons/methodology/css3.svg";
 import JavascriptLogo from "../../media/icons/methodology/javascript.svg";
+import CoffeeBreakLogo from "../../media/icons/methodology/break.svg";
+import StretchingLogo from "../../media/icons/methodology/Streching.svg";
 
 export const Sketch = {
     title: "Sketch",
@@ -143,3 +145,14 @@ export const Javascript = {
     logo: JavascriptLogo,
 }
 
+export const CoffeeBreak = {
+    title: "Coffee Break",
+    altImage: "Coffee Break logo",
+    logo: CoffeeBreakLogo,
+}
+
+export const Streching = {
+    title: "Streching",
+    altImage: "Streching logo",
+    logo: StretchingLogo,
+}

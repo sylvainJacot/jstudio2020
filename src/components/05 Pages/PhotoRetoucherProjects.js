@@ -4,11 +4,9 @@ import styled from "styled-components";
 import Skillheader from "../04 Organisms/skillpage/skillheader";
 import {colorsRoles} from "../01 Atoms/Colors";
 import {media} from "../01 Atoms/MediaQueries";
-
+import NavPhotoRetoucherProjects from "../04 Organisms/NavPhotoRetoucherProjects/NavPhotoRetoucherProjects"
 import {SkillsAnimals} from "../01 Atoms/Images-UXUI";
 import TemplateMethodo from "../04 Organisms/skillpage/TemplateMethodo";
-import {Placeholder} from "./CreativeDeveloperProjects";
-import {ClientsRetoucher, ClientsUXUI} from "../01 Atoms/Data";
 
 
 
@@ -35,7 +33,8 @@ const PhotoRetoucherProjects = () => {
                 Flipped={true}
                 ClientsRetoucher
             />
-            <TemplateMethodo/>
+            <TemplateMethodo isretoucher/>
+            <NavPhotoRetoucherProjects />
 
 
 
