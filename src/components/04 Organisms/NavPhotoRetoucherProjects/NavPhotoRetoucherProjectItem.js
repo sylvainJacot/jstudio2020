@@ -5,19 +5,19 @@ import TestImage from "../../../media/img/Projects/Evergreen/Evergreen-folio_Des
 import {colorsRoles} from "../../01 Atoms/Colors";
 import {transitions} from "../../01 Atoms/Animations";
 
-const NavPhotoRetoucherProjectItem = () => {
+const NavPhotoRetoucherProjectItem = (props) => {
     return <>
         <Wrapper>
-            <PictureWrapper>
+            <PictureWrapper to={props.slug}>
                 <ResponsiveImage
-                sourceDesktop={TestImage}
-                sourceMobile={TestImage}
+                sourceDesktop={props.thumbnail}
+                sourceMobile={props.thumbnail}
                 breakPoint={"768"}
                 altImage={"test"}
             />
             </PictureWrapper>
             <PictureLabel>
-                <h3>Project Title</h3>
+                <h3>{props.title}</h3>
             </PictureLabel>
         </Wrapper>
     </>
@@ -34,7 +34,6 @@ bottom: 0px;
 display: flex;
 justify-content: center;
 align-items: center;
-border: 1px solid ${colorsRoles.LightGrey};
 border-top: none;
 background-color: ${colorsRoles.White};
 border-radius: 0px 0px 4px 4px;
@@ -55,7 +54,7 @@ flex-direction: column;
 align-items: center;
 width: 320px;
 height: 320px;
-
+margin: 40px;
 &:hover {
   ${PictureLabel} {
  bottom: -56px;
@@ -73,7 +72,7 @@ overflow: hidden;
 height: 100%;
 background-color: grey;
 box-shadow: 0 2px 10px ${colorsRoles.DarkGrey}50, 0 2px 3px ${colorsRoles.DarkGrey}50;
-border: 1px solid ${colorsRoles.White};
+border: 4px solid ${colorsRoles.White};
 cursor: pointer;
 z-index: 1;
 
@@ -86,7 +85,7 @@ bottom: 0;
 left: 0;
 background: linear-gradient(to right bottom, ${colorsRoles.White} 5.99%, ${colorsRoles.White} 48.93%, rgba(255, 255, 255, 0) 49.21%);
 opacity: .2;
-transition: ${transitions.easeOut};
+transition: ${transitions.basic1};
 }
 & img {
 width: 100%;
