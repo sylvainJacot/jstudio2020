@@ -126,7 +126,7 @@ const NavUxUIProjects = (props) => {
 
         return (
             <>
-                <div style={Box} ref={myRef}>
+                <section style={Box} ref={myRef}>
 
                     {
                         UIUXProjects.map((project) =>
@@ -148,7 +148,7 @@ const NavUxUIProjects = (props) => {
                         )
                     }
 
-                </div>
+                </section>
 
             </>
         )

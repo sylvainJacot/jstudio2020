@@ -33,7 +33,7 @@ const NavCreativeDeveloperProjects = () => {
 
 export default NavCreativeDeveloperProjects;
 
-export const NavCreativeDeveloperProjectsWrapper = styled.div`
+export const NavCreativeDeveloperProjectsWrapper = styled.section`
 width: 100%;
 background-color: ${colorsRoles.White};
 padding-top: 88px;
