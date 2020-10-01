@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import {media, sizes} from "../../01 Atoms/MediaQueries";
+import {media} from "../../01 Atoms/MediaQueries";
 import ProjectHeader from "../../04 Organisms/projectitem/projectheader";
 import ProjectMainTitle from "../../04 Organisms/projectitem/ProjectMainTitle";
-import TemplateMethodo from "../../04 Organisms/skillpage/TemplateMethodo";
-import TemplateImageProject from "../../04 Organisms/projectitem/TemplateImageProject";
 import BackButton from "../../02 Molecules/BackButton";
 
 export const Box = styled.div`
@@ -36,7 +34,6 @@ height: 400px;
 
 const PhotoRetoucherProject = (props) => {
 
-    const ImageProject = props.ImageProject;
 
     return <>
         <Box>
@@ -52,26 +49,7 @@ const PhotoRetoucherProject = (props) => {
                 roles={props.roles}
                 lightmode={false}
             />
-            <TemplateMethodo
-                projects={props.projects}
-                isproject
-            />
-            <BackgroundImageProject
-                bgImage={props.bgImage}
-            />
 
-            {ImageProject.map((item,index) => (
-                <TemplateImageProject
-                    key={index}
-                    sourceDesktop={item.srcDesktop}
-                    sourceMobile={item.srcMobile}
-                    breakPoint={sizes.tablet}
-                    altImage={item.altImg}
-                    bgColor={item.bgColor}
-                />
-            ))
-
-            }
         </Box>
     </>
 

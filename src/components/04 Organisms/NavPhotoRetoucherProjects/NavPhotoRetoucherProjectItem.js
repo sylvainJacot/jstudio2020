@@ -3,16 +3,15 @@ import styled from "styled-components";
 import ResponsiveImage from "../../01 Atoms/ResponsiveImage";
 import {colorsRoles} from "../../01 Atoms/Colors";
 import {transitions} from "../../01 Atoms/Animations";
+import {Link} from "react-router-dom";
 
 const NavPhotoRetoucherProjectItem = (props) => {
     return <>
-        <Wrapper>
-            <PictureWrapper to={props.slug}>
+        <Wrapper to={props.slug}>
+            <PictureWrapper >
                 <ResponsiveImage
                 sourceDesktop={props.thumbnail}
                 sourceMobile={props.thumbnail}
-                breakPoint={"768"}
-                altImage={"test"}
             />
             </PictureWrapper>
             <PictureLabel>
@@ -46,7 +45,7 @@ transition: ${transitions.basic1};
 
 `;
 
-export const Wrapper = styled.a`
+export const Wrapper = styled(Link)`
 position: relative;
 display: flex;
 flex-direction: column;
