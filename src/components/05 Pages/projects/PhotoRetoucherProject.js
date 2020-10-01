@@ -5,8 +5,8 @@ import {media} from "../../01 Atoms/MediaQueries";
 import ProjectMainTitle from "../../04 Organisms/projectitem/ProjectMainTitle";
 import BackButton from "../../02 Molecules/BackButton";
 import PhotoProjectHeader from "../../04 Organisms/projectitem/PhotoProjectHeader";
-import ResponsiveImage from "../../01 Atoms/ResponsiveImage";
 import PictureComponent from "../../04 Organisms/projectitem/PictureComponent";
+import TestImage from "../../../media/img/Projects/03_Photo Retoucher/EATBRUSSELS2019/151_EATBXL_FOOD_QueueBoeuf.png";
 
 export const Box = styled.div`
 
@@ -48,7 +48,10 @@ const PhotoRetoucherProject = (props) => {
                 roles={props.roles}
                 lightmode={false}
             />
-            <PictureComponent ratioFourThree/>
+            <PictureComponent
+                ratio={"1/1"}
+                src={TestImage}
+            />
 
         </Box>
     </>

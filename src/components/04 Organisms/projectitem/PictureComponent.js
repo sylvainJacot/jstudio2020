@@ -1,20 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import AspectRatio from "react-aspect-ratio/dist/next";
 
 
-const PictureComponent = ({ratioSixteenNine,...props}) => {
+
+const PictureComponent = (props) => {
     return <>
+        <AspectRatio ratio={props.ratio} style={{ maxWidth: '800px' }}>
+            <img src={props.src}/>
+        </AspectRatio>
 
     </>
 
 };
 
 export default PictureComponent;
-
-export const Wrapper = styled.div`
-  width: 20%;
-  overflow: hidden;
-  background-color: blue;
-
-
-`;

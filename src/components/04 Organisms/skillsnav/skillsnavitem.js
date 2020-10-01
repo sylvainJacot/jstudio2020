@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {fonts} from "../../01 Atoms/globalStyle";
 import {media} from "../../01 Atoms/MediaQueries";
 import {transitions, Breathe, UpDown} from "../../01 Atoms/Animations";
