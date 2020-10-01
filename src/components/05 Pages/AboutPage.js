@@ -39,6 +39,7 @@ const AboutPage = (props) => {
 export default AboutPage;
 
 export const AboutPageWrapper = styled.div`
+content-visibility: auto;
 position: fixed;
 top: ${props => props.isabout ? "0px" : "-100%"};
 z-index: 2;

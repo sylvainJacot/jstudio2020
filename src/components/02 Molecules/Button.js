@@ -106,7 +106,7 @@ ${(props) => {
 
 ${(props) => {
     return (
-        props.LightMode &&
+        props.lightmode &&
         css`
         border-color: ${colorsRoles.DarkGrey};
         & > div {

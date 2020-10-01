@@ -5,6 +5,8 @@ import {media} from "../../01 Atoms/MediaQueries";
 import ProjectMainTitle from "../../04 Organisms/projectitem/ProjectMainTitle";
 import BackButton from "../../02 Molecules/BackButton";
 import PhotoProjectHeader from "../../04 Organisms/projectitem/PhotoProjectHeader";
+import ResponsiveImage from "../../01 Atoms/ResponsiveImage";
+import PictureComponent from "../../04 Organisms/projectitem/PictureComponent";
 
 export const Box = styled.div`
 
@@ -46,6 +48,7 @@ const PhotoRetoucherProject = (props) => {
                 roles={props.roles}
                 lightmode={false}
             />
+            <PictureComponent ratioFourThree/>
 
         </Box>
     </>

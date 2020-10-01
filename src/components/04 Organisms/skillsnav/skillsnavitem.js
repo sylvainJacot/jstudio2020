@@ -113,7 +113,6 @@ display: none;
 `}
 };
 & a,span {
-
 visibility: visible;
 ${media.desktop`
 visibility: hidden;

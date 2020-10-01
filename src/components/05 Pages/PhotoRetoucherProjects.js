@@ -36,8 +36,6 @@ const PhotoRetoucherProjects = () => {
             <TemplateMethodo isretoucher/>
             <NavPhotoRetoucherProjects />
 
-
-
         </Box>
 
     </>
