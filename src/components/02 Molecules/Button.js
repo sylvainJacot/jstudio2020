@@ -38,7 +38,7 @@ margin-bottom: 0px;
     
 ${(props) => {
     return (
-      props.Small &&
+      props.small &&
       css`
       padding: 8px 16px 8px 16px;
       ${media.desktop`
@@ -81,12 +81,12 @@ transition: ${transitions.basic1};
 
 
 
-const Button = ({ pathname, label, Small, LightMode}) => {
+const Button = ({ pathname, label, small, lightmode}) => {
 
     return (
 
 
-            <StyledLink to={pathname} Small={Small} LightMode={LightMode}>
+            <StyledLink to={pathname} small={small} lightmode={lightmode}>
                 <Content>
                     {label ? label : "Default"}
                     <IcArrow IconSize={"24px"} SizeBis={"100%"}/>

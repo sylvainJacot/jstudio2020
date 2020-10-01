@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from "react";
 import {useRouteMatch} from "react-router-dom";
 
-import {colorsRoles, projectColors} from "../../01 Atoms/Colors";
+import {projectColors} from "../../01 Atoms/Colors";
 import {UIUXProjects} from "../../01 Atoms/Data";
 import NavUxUIProjectsItem from "./NavUxUIProjectsItem";
 
@@ -46,9 +46,8 @@ const NavUxUIProjects = (props) => {
         const Bg3 = projectColors.Kia;
         const Bg4 = projectColors.Telenet;
 
-        setYPos({YPos:lastScrollY});
-       // console.log(lastScrollY);
-        // console.log(refTop);
+        setYPos(lastScrollY);
+
 
 
         if (MediaQueryDesktop.matches) {
@@ -129,10 +128,10 @@ const NavUxUIProjects = (props) => {
                 <section style={Box} ref={myRef}>
 
                     {
-                        UIUXProjects.map((project) =>
+                        UIUXProjects.map((project,index) =>
 
                         <NavUxUIProjectsItem
-
+                        key={index}
                         bgColor={bgColor}
                         slug={`${url}/${project.slug}`}
                         title={project.title}

@@ -240,7 +240,7 @@ const Skillsnavitem = (props) => {
 
                         <h1>{props.title}</h1>
                         <p>{props.quote}</p>
-                        <Button pathname={"/"} label={props.label} Small/>
+                        <Button pathname={"/"} label={props.label} small/>
 
                     </DisciplineNavItemText>
 

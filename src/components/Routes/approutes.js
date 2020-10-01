@@ -60,9 +60,9 @@ const AppRoutes = () => {
     return <>
         <Switch>
         {
-            Routes.map((route, key) =>
+            Routes.map((route, index) =>
                  <Route
-                     key={key}
+                 key={index}
                  path={route.path}
                  exact={route.exact}
                  component={route.component}

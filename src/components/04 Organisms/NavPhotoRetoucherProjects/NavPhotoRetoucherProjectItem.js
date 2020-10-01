@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import ResponsiveImage from "../../01 Atoms/ResponsiveImage";
-import TestImage from "../../../media/img/Projects/Evergreen/Evergreen-folio_Desktop.png";
 import {colorsRoles} from "../../01 Atoms/Colors";
 import {transitions} from "../../01 Atoms/Animations";
 

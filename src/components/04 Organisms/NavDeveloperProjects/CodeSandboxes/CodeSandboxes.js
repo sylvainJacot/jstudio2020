@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {colors, colorsRoles} from "../../../01 Atoms/Colors";
+import {colorsRoles} from "../../../01 Atoms/Colors";
 
 
 const CodeSandboxes = () => {

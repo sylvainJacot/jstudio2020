@@ -1,12 +1,11 @@
 import React from "react";
 
-import {colorsRoles, gradient, projectColors, methodoColors, colors} from "./Colors";
+import {colorsRoles, gradient, projectColors, colors} from "./Colors";
 import {EvergreenProject, SkillsAnimals, SamsungProject, KiaProject, TelenetProject} from "./Images-UXUI";
 import {ClavieProject, ParentrepriseProject, SoSmartProject} from "../01 Atoms/Images-Developer";
 import {
     Sketch,
     RawSketch,
-    EightPoint,
     AtomicDesign,
     Invision,
     StyledComponents,

@@ -1,8 +1,6 @@
 import ParrotSrc from "../../media/img/Parrot.png";
 import FoxSrc from "../../media/img/Fox.png";
 import HorseSrc from "../../media/img/Horse.png"
-import Sketch from "../../media/icons/Sketch.svg";
-import Sass from "../../media/icons/Sass.svg";
 
 
 /*       ------- EVERGREEN -------        */

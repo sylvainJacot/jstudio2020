@@ -54,8 +54,9 @@ const ProjectMainTitle = (props) => {
 
                   <ShortDescriptionWrapper>
 
-                            {roles.map((item) => (
+                            {roles.map((item,index) => (
                                 <ShortDescription
+                                    key={index}
                                     title={item.titlerole}
                                     description={item.descriptionrole}
                                 />

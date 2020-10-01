@@ -1,5 +1,4 @@
 import React from "react";
-import {colorsRoles} from "./Colors";
 import styled from "styled-components";
 import {transitions} from "./Animations";
 import {media} from "./MediaQueries";

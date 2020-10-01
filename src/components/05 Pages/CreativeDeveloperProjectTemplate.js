@@ -1,7 +1,6 @@
 import React from "react";
 import CreativeDeveloperProject from "./projects/CreativeDeveloperProject";
 import {CreativeDeveloperProjects} from "../01 Atoms/Data";
-import UIUXDesignerProject from "./projects/UIUXDesignerProject";
 
 
 const CreativeDeveloperProjectTemplate = ({match}) => {

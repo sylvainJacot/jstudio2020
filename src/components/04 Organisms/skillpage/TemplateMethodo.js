@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {media} from "../../01 Atoms/MediaQueries";
-import {colorsRoles, backgrounds, gradient} from "../../01 Atoms/Colors";
+import {colorsRoles} from "../../01 Atoms/Colors";
 import MethodoImage from "../../02 Molecules/methodoImage";
 import {MainMethodoUXUI, MainMethodoDeveloper, MainMethodoRetoucher} from "../../01 Atoms/Data";
 
@@ -55,36 +55,40 @@ const TemplateMethodo = ( props ) => {
             <h1>{props.isproject ? "Workflow" : "Favourite workflow"}</h1>
                 <MethodoImagesWrapper>
 
-                    {props.isuiuxdesigner &&  MainMethodoUXUI.map((item) => (
+                    {props.isuiuxdesigner &&  MainMethodoUXUI.map((item, index) => (
 
                         <MethodoImage
+                            key={index}
                             sourceMobile={item.logo}
                             methodTitle={item.title}
                         />
                     ))
                     }
 
-                    {props.iscreativedeveloper &&  MainMethodoDeveloper.map((item) => (
+                    {props.iscreativedeveloper &&  MainMethodoDeveloper.map((item, index) => (
 
                         <MethodoImage
+                            key={index}
                             sourceMobile={item.logo}
                             methodTitle={item.title}
                         />
                     ))
                     }
 
-                    {props.isretoucher &&  MainMethodoRetoucher.map((item) => (
+                    {props.isretoucher &&  MainMethodoRetoucher.map((item, index) => (
 
                         <MethodoImage
+                            key={index}
                             sourceMobile={item.logo}
                             methodTitle={item.title}
                         />
                     ))
                     }
 
-                    {props.isproject && props.projects.map((item) => (
+                    {props.isproject && props.projects.map((item, index) => (
 
                         <MethodoImage
+                            key={index}
                             sourceMobile={item.logo}
                             methodTitle={item.title}
                         />

@@ -6,7 +6,6 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import ScrollToTop from "./components/02 Molecules/ScrollToTop";
-import {colorsRoles} from "./components/01 Atoms/Colors";
 
 
 setTimeout(console.log.bind(console, "%cDesigned and developed by Jacot Sylvain" ,

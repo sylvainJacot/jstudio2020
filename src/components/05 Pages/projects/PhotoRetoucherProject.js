@@ -7,7 +7,6 @@ import ProjectMainTitle from "../../04 Organisms/projectitem/ProjectMainTitle";
 import TemplateMethodo from "../../04 Organisms/skillpage/TemplateMethodo";
 import TemplateImageProject from "../../04 Organisms/projectitem/TemplateImageProject";
 import BackButton from "../../02 Molecules/BackButton";
-import ResponsiveImage from "../../01 Atoms/ResponsiveImage";
 
 export const Box = styled.div`
 
@@ -51,7 +50,7 @@ const PhotoRetoucherProject = (props) => {
                 titlerole={props.titlerole}
                 description={props.descriptionrole}
                 roles={props.roles}
-                LightMode={false}
+                lightmode={false}
             />
             <TemplateMethodo
                 projects={props.projects}
