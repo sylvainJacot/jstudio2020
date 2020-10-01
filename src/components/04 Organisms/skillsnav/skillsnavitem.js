@@ -113,6 +113,7 @@ display: none;
 `}
 };
 & a,span {
+
 visibility: visible;
 ${media.desktop`
 visibility: hidden;
@@ -214,7 +215,7 @@ bottom: -32%;
         visibility: visible;
         padding: 8px 24px 8px 16px;
         transition: ${transitions.basic1};
-        moz-transition: ${transitions.basic2}
+        moz-transition: ${transitions.basic1}
       `}
         }
     }

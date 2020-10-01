@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import {media, sizes} from "../../01 Atoms/MediaQueries";
-import ProjectHeader from "../../04 Organisms/projectitem/projectheader";
+import ProjectHeader from "../../04 Organisms/projectitem/ProjectHeader";
 import ProjectMainTitle from "../../04 Organisms/projectitem/ProjectMainTitle";
 import TemplateMethodo from "../../04 Organisms/skillpage/TemplateMethodo";
 import TemplateImageProject from "../../04 Organisms/projectitem/TemplateImageProject";

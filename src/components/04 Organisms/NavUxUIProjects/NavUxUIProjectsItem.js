@@ -16,6 +16,7 @@ width: 100%;
 height: 640px;
 display: flex;
 flex-direction: column-reverse;
+content-visibility: auto;
 
 ${media.desktop`
 height: 880px;

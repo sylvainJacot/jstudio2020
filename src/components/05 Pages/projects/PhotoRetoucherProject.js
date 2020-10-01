@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 import {media} from "../../01 Atoms/MediaQueries";
-import ProjectHeader from "../../04 Organisms/projectitem/projectheader";
 import ProjectMainTitle from "../../04 Organisms/projectitem/ProjectMainTitle";
 import BackButton from "../../02 Molecules/BackButton";
+import PhotoProjectHeader from "../../04 Organisms/projectitem/PhotoProjectHeader";
 
 export const Box = styled.div`
 
@@ -38,10 +38,7 @@ const PhotoRetoucherProject = (props) => {
     return <>
         <Box>
             <BackButton/>
-            <ProjectHeader
-                headerImage={props.headerImage}
-                mainColor={props.mainColor}
-            />
+            <PhotoProjectHeader/>
             <ProjectMainTitle
                 title={props.title}
                 titlerole={props.titlerole}
