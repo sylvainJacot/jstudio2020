@@ -49,7 +49,8 @@ const PhotoRetoucherProject = (props) => {
                 lightmode={false}
             />
             <PictureComponent
-                ratio={"1/1"}
+                videoportrait
+                width={"50%"}
                 src={TestImage}
             />
 
