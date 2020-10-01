@@ -6,11 +6,11 @@ import {media} from "../../01 Atoms/MediaQueries";
 
 
 export const Header = styled.header`
+position: relative;
 height: 208px;
 width: 100%;
 padding-top: 40px;
 padding-bottom: 16px;
-position: relative;
 display: flex;
 justify-content: center;
 align-items: flex-end;
@@ -23,8 +23,11 @@ padding-top: 24px;
 
 & picture {
 width: 80%;
-height: fit-content;
+height: 100%;
 transition: ${transitions.basic2};
+display: flex;
+justify-content: center;
+align-items: center;
 
 &:hover {
 transform: scale(.9);
@@ -34,10 +37,12 @@ transition: ${transitions.basic1};
 ${media.desktop`
 width: 48%;
 `};
+& img {
 
-& img  {
-width: 100%;
+max-height: 90%;
+
 }
+
 }
 
 
