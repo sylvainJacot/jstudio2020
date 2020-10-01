@@ -5,7 +5,6 @@ import {transitions} from "../01 Atoms/Animations";
 import Skillsnavitem from "../04 Organisms/skillsnav/skillsnavitem";
 import {Skills} from "../01 Atoms/Data";
 import {UserContext} from "../Hooks/Providers/Context";
-import AboutPage from "./AboutPage";
 
 
 export const SkillsNavWrapper = styled.nav`
@@ -44,7 +43,7 @@ transition: ${transitions.basic2};
 
 const HomePage = () => {
 
-    const {value, setValue} = useContext(UserContext);
+    const {value} = useContext(UserContext);
 
         return <>
               <SkillsNavWrapper value={value}>

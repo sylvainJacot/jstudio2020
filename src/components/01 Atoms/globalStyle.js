@@ -3,9 +3,6 @@
 import {createGlobalStyle} from "styled-components";
 import {colorsRoles} from "./Colors";
 
-import PlayfairDisplayBlack from "./fonts/Playfair_Display/PlayfairDisplay-Black.woff";
-import PlayfairDisplayBlack2 from "./fonts/Playfair_Display/PlayfairDisplay-Black.woff2";
-import PlayfairDisplayBlack3 from "./fonts/Playfair_Display/PlayfairDisplay-Black.ttf";
 
 import RobotoRegular from "./fonts/Roboto/Roboto-Regular.woff";
 import RobotoRegular2 from "./fonts/Roboto/Roboto-Regular.woff";

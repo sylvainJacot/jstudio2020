@@ -235,7 +235,7 @@ const NavCreativeDeveloperProjectItem = (props) => {
                     <p>{props.field}</p>
                     <h3>{props.title}</h3>
                     <p>{props.description}</p>
-                    <Button pathname={props.slug} label={"See more"} LightMode/>
+                    <Button pathname={props.slug} label={"See more"} lightmode/>
                 </LeftContent>
             </LeftSide>
             <RightSide>

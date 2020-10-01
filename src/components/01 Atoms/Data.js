@@ -1,12 +1,11 @@
 import React from "react";
 
-import {colorsRoles, gradient, projectColors, methodoColors, colors} from "./Colors";
+import {colorsRoles, gradient, projectColors, colors} from "./Colors";
 import {EvergreenProject, SkillsAnimals, SamsungProject, KiaProject, TelenetProject} from "./Images-UXUI";
 import {ClavieProject, ParentrepriseProject, SoSmartProject} from "../01 Atoms/Images-Developer";
 import {
     Sketch,
     RawSketch,
-    EightPoint,
     AtomicDesign,
     Invision,
     StyledComponents,
@@ -25,6 +24,7 @@ import {
     CSS3,
     Javascript, CoffeeBreak, Streching
 } from "./Icons-Methodo";
+import {EatBxlProject} from "./Images-Retoucher";
 
 export const pathuiux = "/ux-ui-designer";
 export const pathdev = "/creative-developer";
@@ -500,68 +500,9 @@ export const CreativeDeveloperProjects = [
 
 export const PhotoRetoucherProjects = [
     {
-        title: "Clavie",
-        skill: "Creative Developer",
-        fields: "Integration HTML/CSS",
-        description: "Active for more than 40 years in the packaging sector, the CLAVIE company has developed a professional approach in the solution of packaging problems.",
-        madeWith: [
-            Html5,
-            Sass,
-            Javascript
-        ],
-        roles: [
-            {
-                titlerole: "Team",
-                descriptionrole:"6 people",
-            },
-            {
-                titlerole: "Role",
-                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
-            },
-            {
-                titlerole: "Website",
-                descriptionrole:"www.clavie.be",
-            },
-        ],
-        slug: "Clavie",
-        headerImage: ClavieProject.ClavieHeader,
-        decorativeimage: ClavieProject.ClavieDecorative,
-        maincolor: projectColors.Clavie,
-        FieldTextColorVisible: projectColors.Clavie,
-        thumbnailproject : ClavieProject.ClavieThumbnail,
-        methodology: [
-            Sketch,
-            Html5,
-            Sass,
-            Javascript,
-            Bootsrap,
-            Git,
-        ],
-        images: [
-            {
-                srcDesktop: ClavieProject.ClavieFolio01,
-                srcMobile: ClavieProject.ClavieFolio01,
-                altImg: "Clavie project portfolio",
-                bgColor: colors.PureWhite,
-            },
-            {
-                srcDesktop: ClavieProject.ClavieFolio02,
-                srcMobile: ClavieProject.ClavieFolio02,
-                altImg: "Clavie project portfolio",
-                bgColor: colors.PureWhite,
-            },
-        ]
-
-    },
-    {
-        title: "SoSmart",
-        skill: "Creative Developer",
-        fields: "Integration HTML/CSS",
-        description: "So Smart is an online marketplace for booking hairdressing, aesthetic and well-being services under strong promotion during off-peak hours or at the last minute.\n",
-        madeWith: [
-            Html5,
-            CSS3
-        ],
+        title: "Eat Brussels Festival",
+        skill: "Photo Retoucher",
+        slug: "EatBrusselsFestival",
         roles: [
             {
                 titlerole: "Team",
@@ -576,30 +517,120 @@ export const PhotoRetoucherProjects = [
                 descriptionrole:"Around 4 mounths",
             },
         ],
-        slug: "SoSmart",
-        headerImage: SoSmartProject.SoSmartHeader,
-        decorativeimage: SoSmartProject.SoSmartDeco,
-        maincolor: projectColors.SoSmart,
-        FieldTextColorVisible: projectColors.Evergreen,
-        thumbnailproject : SoSmartProject.SoSmartThumbnail,
-        methodology: [
-            Sketch,
-            Html5,
-            CSS3,
-            Git
-        ],
+        headerImage: EatBxlProject.EatBXLHeader,
+        decorativeimage: EatBxlProject.EatBXlDeco,
+        maincolor: projectColors.Clavie,
+        thumbnailproject : EatBxlProject.EatBXLMainPicture,
         images: [
             {
-                srcDesktop: SoSmartProject.SoSmartFolio01,
-                srcMobile: SoSmartProject.SoSmartFolio01,
-                altImg: "So smart project portfolio",
-                bgColor: colors.PureWhite,
+                src: EatBxlProject.EatBXLPict01,
+                altImg: "Eat Brussels Festival picture portfolio",
             },
+            {
+                src: EatBxlProject.EatBXLPict02,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+            {
+                src: EatBxlProject.EatBXLPict03,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+            {
+                src: EatBxlProject.EatBXLPict04,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+            {
+                src: EatBxlProject.EatBXLPict05,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },{
+                src: EatBxlProject.EatBXLPict06,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },{
+                src: EatBxlProject.EatBXLPict07,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },{
+                src: EatBxlProject.EatBXLPict08,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+            {
+                src: EatBxlProject.EatBXLPict09,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+            {
+                src: EatBxlProject.EatBXLPict10,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+
+
+
+
         ]
-
     },
-    
+    {
+        title: "Eat Brussels Festival 2",
+        skill: "Photo Retoucher",
+        slug: "EatBrusselsFestival2",
+        roles: [
+            {
+                titlerole: "Team",
+                descriptionrole:"6 people",
+            },
+            {
+                titlerole: "Role",
+                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+            },
+            {
+                titlerole: "Time",
+                descriptionrole:"Around 4 mounths",
+            },
+        ],
+        headerImage: EatBxlProject.EatBXLHeader,
+        decorativeimage: EatBxlProject.EatBXlDeco,
+        maincolor: projectColors.Clavie,
+        thumbnailproject : EatBxlProject.EatBXLMainPicture,
+        images: [
+            {
+                src: EatBxlProject.EatBXLPict01,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+            {
+                src: EatBxlProject.EatBXLPict02,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+            {
+                src: EatBxlProject.EatBXLPict03,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+            {
+                src: EatBxlProject.EatBXLPict04,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+            {
+                src: EatBxlProject.EatBXLPict05,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },{
+                src: EatBxlProject.EatBXLPict06,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },{
+                src: EatBxlProject.EatBXLPict07,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },{
+                src: EatBxlProject.EatBXLPict08,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+            {
+                src: EatBxlProject.EatBXLPict09,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
+            {
+                src: EatBxlProject.EatBXLPict10,
+                altImg: "Eat Brussels Festival picture portfolio",
+            },
 
+
+
+
+        ]
+    },
 
 ]
 

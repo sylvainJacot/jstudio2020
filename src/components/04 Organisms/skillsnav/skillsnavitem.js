@@ -112,7 +112,7 @@ text-align: left;
 display: none;
 `}
 };
-& > a {
+& a,span {
 visibility: visible;
 ${media.desktop`
 visibility: hidden;
@@ -210,7 +210,7 @@ bottom: -32%;
         moz-transition: ${transitions.basic2}
         }
         ${media.desktop`
-        &  a {
+        &  a, span {
         visibility: visible;
         padding: 8px 24px 8px 16px;
         transition: ${transitions.basic1};
@@ -240,7 +240,7 @@ const Skillsnavitem = (props) => {
 
                         <h1>{props.title}</h1>
                         <p>{props.quote}</p>
-                        <Button pathname={"/"} label={props.label} Small/>
+                        <Button label={props.label} small isspan/>
 
                     </DisciplineNavItemText>
 

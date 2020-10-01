@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import {media} from "../../01 Atoms/MediaQueries";
 import {transitions} from "../../01 Atoms/Animations";
-import {colorsRoles,projectColors} from "../../01 Atoms/Colors";
+import {colorsRoles} from "../../01 Atoms/Colors";
 import ResponsiveImage from "../../01 Atoms/ResponsiveImage";
 import Parallax from "react-rellax";
 import Button from "../../02 Molecules/Button";

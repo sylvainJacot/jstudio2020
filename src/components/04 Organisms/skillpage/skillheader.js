@@ -220,20 +220,20 @@ const Skillheader = (props) => {
                 <LogosWrapper>
 
                     {
-                        props.ClientsUXUI && ClientsUXUI.map((item) => (
-                            <LogoItemWrapper><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
+                        props.ClientsUXUI && ClientsUXUI.map((item, index) => (
+                            <LogoItemWrapper key={index}><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
                         ))
                     }
 
                     {
-                        props.ClientsDeveloper && ClientsDeveloper.map((item) => (
-                            <LogoItemWrapper><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
+                        props.ClientsDeveloper && ClientsDeveloper.map((item,index) => (
+                            <LogoItemWrapper key={index}><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
                         ))
                     }
 
                     {
-                        props.ClientsRetoucher && ClientsRetoucher.map((item) => (
-                            <LogoItemWrapper><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
+                        props.ClientsRetoucher && ClientsRetoucher.map((item, index) => (
+                            <LogoItemWrapper key={index}><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
                         ))
                     }
 

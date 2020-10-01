@@ -3,7 +3,7 @@ import "./reset.css";
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import GlobalFonts from "./components/01 Atoms/globalStyle";
 
-import Footer from "./components/04 Organisms/footer/footer";
+
 import AppRoutes from "./components/Routes/approutes";
 import HeaderNavigation from "./components/04 Organisms/HeaderNavigation/HeaderNavigation";
 import {UserContext} from "./components/Hooks/Providers/Context";
