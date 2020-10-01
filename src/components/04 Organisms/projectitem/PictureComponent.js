@@ -1,11 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import styled, {css} from "styled-components";
+import {colorsRoles} from "../../01 Atoms/Colors";
+import {transitions} from "../../01 Atoms/Animations";
+import LightBoxPicture from "./LightBoxPicture";
 
 
 
 const PictureComponent = (props) => {
+
+    const [active,setactive] = useState(false)
+
+    const handleOnClick = () => {
+        setactive(!active)
+    }
+
     return <>
-        <Wrapper width={props.width}>
+        <Wrapper width={props.width} onClick={handleOnClick}>
             <AspectRatio
                 video={props.video}
                 videoportrait={props.videoportrait}
@@ -18,14 +28,21 @@ const PictureComponent = (props) => {
                 <img src={props.src}/>
             </AspectRatio>
         </Wrapper>
+        <LightBoxPicture
+            onClick={handleOnClick}
+            isactive={active}
+        />
+
     </>
 
 };
 
 export default PictureComponent;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.a`
+display: block;
 position: relative;
+overflow: hidden;
 width: ${props => props.width};
 `;
 
@@ -33,7 +50,28 @@ width: ${props => props.width};
 export const AspectRatio = styled.div`
 overflow: hidden;
 position: relative;
+height: max-content;
 
+&:before {
+position: absolute;
+content: "";
+display: block;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: ${colorsRoles.White};
+opacity: 0;
+transition: ${transitions.basic2};
+cursor:pointer;
+z-index: 999;
+}
+&:hover {
+    &:before {
+    opacity: 0.1;
+    transition: ${transitions.basic1};
+    }
+}
 
 ${(props) => {
     return (

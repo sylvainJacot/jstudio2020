@@ -1,6 +1,8 @@
 import React from "react";
 import PhotoRetoucherProject from "./projects/PhotoRetoucherProject";
 import {PhotoRetoucherProjects} from "../01 Atoms/Data";
+import TestImage from "../../media/img/Projects/03_Photo Retoucher/EATBRUSSELS2019/191_EATBXL_FOOD_DUO_Graines.png";
+
 
 
 const PhotoRetoucherProjectTemplate = ({match}) => {
@@ -11,16 +13,18 @@ const PhotoRetoucherProjectTemplate = ({match}) => {
     return <>
 
         <PhotoRetoucherProject
-            headerImage={photoretoucherproject.headerImage}
             title={photoretoucherproject.title}
-            bgImage={photoretoucherproject.decorativeimage}
-            sourceMobile={photoretoucherproject.decorativeimage}
-            titlerole={photoretoucherproject.title}
-            descriptionrole={photoretoucherproject.descriptionrole}
             roles={photoretoucherproject.roles}
-            projects={photoretoucherproject.methodology}
-            ImageProject={photoretoucherproject.images}
-            mainColor={photoretoucherproject.maincolor}
+            description={photoretoucherproject.description}
+            video={photoretoucherproject.ratio}
+            videoportrait={photoretoucherproject.videoportrait}
+            videolandscape={photoretoucherproject.videolandscape}
+            landscape={photoretoucherproject.landscape}
+            carre={photoretoucherproject.carre}
+            rectanglelandscape={photoretoucherproject.rectanglelandscape}
+            rectangleportrait={photoretoucherproject.rectangleportrait}
+            src={TestImage}
+            width={"400px"}
         />
 
     </>

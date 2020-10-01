@@ -25,6 +25,7 @@ import {
     Javascript, CoffeeBreak, Streching
 } from "./Icons-Methodo";
 import {EatBxlProject} from "./Images-Retoucher";
+import PhotoRetoucherProject from "../05 Pages/projects/PhotoRetoucherProject";
 
 export const pathuiux = "/ux-ui-designer";
 export const pathdev = "/creative-developer";
@@ -503,6 +504,7 @@ export const PhotoRetoucherProjects = [
         title: "Eat Brussels Festival",
         skill: "Photo Retoucher",
         slug: "EatBrusselsFestival",
+        description: "description du projet",
         roles: [
             {
                 titlerole: "Team",
@@ -517,6 +519,12 @@ export const PhotoRetoucherProjects = [
                 descriptionrole:"Around 4 mounths",
             },
         ],
+        videoportrait: false,
+        videolandscape: false,
+        landscape:false,
+        carre:true,
+        rectanglelandscape:false,
+        rectangleportrait:false,
         headerImage: EatBxlProject.EatBXLHeader,
         decorativeimage: EatBxlProject.EatBXlDeco,
         maincolor: projectColors.Clavie,
@@ -565,72 +573,7 @@ export const PhotoRetoucherProjects = [
 
         ]
     },
-    {
-        title: "Eat Brussels Festival 2",
-        skill: "Photo Retoucher",
-        slug: "EatBrusselsFestival2",
-        roles: [
-            {
-                titlerole: "Team",
-                descriptionrole:"6 people",
-            },
-            {
-                titlerole: "Role",
-                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
-            },
-            {
-                titlerole: "Time",
-                descriptionrole:"Around 4 mounths",
-            },
-        ],
-        headerImage: EatBxlProject.EatBXLHeader,
-        decorativeimage: EatBxlProject.EatBXlDeco,
-        maincolor: projectColors.Clavie,
-        thumbnailproject : EatBxlProject.EatBXLMainPicture,
-        images: [
-            {
-                src: EatBxlProject.EatBXLPict01,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },
-            {
-                src: EatBxlProject.EatBXLPict02,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },
-            {
-                src: EatBxlProject.EatBXLPict03,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },
-            {
-                src: EatBxlProject.EatBXLPict04,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },
-            {
-                src: EatBxlProject.EatBXLPict05,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },{
-                src: EatBxlProject.EatBXLPict06,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },{
-                src: EatBxlProject.EatBXLPict07,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },{
-                src: EatBxlProject.EatBXLPict08,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },
-            {
-                src: EatBxlProject.EatBXLPict09,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },
-            {
-                src: EatBxlProject.EatBXLPict10,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },
 
-
-
-
-        ]
-    },
 
 ]
 

@@ -5,8 +5,7 @@ import {media} from "../../01 Atoms/MediaQueries";
 import ProjectMainTitle from "../../04 Organisms/projectitem/ProjectMainTitle";
 import BackButton from "../../02 Molecules/BackButton";
 import PhotoProjectHeader from "../../04 Organisms/projectitem/PhotoProjectHeader";
-import PictureComponent from "../../04 Organisms/projectitem/PictureComponent";
-import TestImage from "../../../media/img/Projects/03_Photo Retoucher/EATBRUSSELS2019/151_EATBXL_FOOD_QueueBoeuf.png";
+import PictureComponent, {AspectRatio} from "../../04 Organisms/projectitem/PictureComponent";
 
 export const Box = styled.div`
 
@@ -46,12 +45,17 @@ const PhotoRetoucherProject = (props) => {
                 titlerole={props.titlerole}
                 description={props.descriptionrole}
                 roles={props.roles}
-                lightmode={false}
             />
             <PictureComponent
-                videoportrait
-                width={"50%"}
-                src={TestImage}
+                video={props.video}
+                videoportrait={props.videoportrait}
+                videolandscape={props.videolandscape}
+                landscape={props.landscape}
+                carre={props.carre}
+                rectanglelandscape={props.rectanglelandscape}
+                rectangleportrait={props.rectangleportrait}
+                width={props.width}
+                src={props.src}
             />
 
         </Box>
