@@ -22,6 +22,7 @@ const PhotoRetoucherProject = (props) => {
                 titlerole={props.titlerole}
                 description={props.descriptionrole}
                 roles={props.roles}
+                photoRetoucher
             />
 
             <GalleryWrapper>
@@ -53,7 +54,7 @@ const PhotoRetoucherProject = (props) => {
 export default PhotoRetoucherProject;
 
 export const Box = styled.div`
-
+height: 100%;
 margin-top: 64px;
 
 ${media.desktop`
@@ -79,5 +80,11 @@ height: 400px;
 `;
 
 export const GalleryWrapper = styled.div`
+width: 72%;
+height: 100%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 
 `;

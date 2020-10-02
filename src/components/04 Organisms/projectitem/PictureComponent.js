@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styled, {css} from "styled-components";
 import {colorsRoles} from "../../01 Atoms/Colors";
 import {transitions} from "../../01 Atoms/Animations";
+import {media} from "../../01 Atoms/MediaQueries";
 import LightBoxPicture from "./LightBoxPicture";
 
 
@@ -27,13 +28,13 @@ const PictureComponent = (props) => {
             >
                 <img src={props.src}/>
             </AspectRatio>
+            <LightBoxPicture
+                onClick={handleOnClick}
+                isactive={active}
+                src={props.src}
+                alt={props.alt}
+            />
         </Wrapper>
-        <LightBoxPicture
-            onClick={handleOnClick}
-            isactive={active}
-            src={props.src}
-            alt={props.alt}
-        />
 
     </>
 
@@ -43,9 +44,18 @@ export default PictureComponent;
 
 export const Wrapper = styled.a`
 display: block;
-position: relative;
-overflow: hidden;
-max-width: ${props => props.bigPicture? "50%" : "300px"};
+width: ${props => props.bigPicture? "304px" : "240px"};
+flex-grow: ${props => props.bigPicture? "2" : "1"};
+margin: 32px;
+box-shadow: 0 10px 18px ${colorsRoles.DarkGrey}50, 0 10px 11px ${colorsRoles.Black}70;
+
+${media.tablet`
+width: ${props => props.bigPicture? "400px" : "200px"};
+`}
+${media.desktopL`
+width: ${props => props.bigPicture? "800px" : "240px"};
+`}
+
 `;
 
 

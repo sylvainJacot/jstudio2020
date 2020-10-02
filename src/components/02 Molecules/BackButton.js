@@ -4,7 +4,7 @@ import {useHistory} from "react-router-dom";
 
 export const BackButtonWrapper = styled.button`
 position: fixed;
-z-index: 4;
+z-index: 5;
 top: 374px;
 left: 24px;
 width: 80px;

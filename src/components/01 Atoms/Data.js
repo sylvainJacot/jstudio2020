@@ -72,7 +72,7 @@ export const Skills =  [
     {
         titleNav: CreativeDev,
         mainTitle: "Creative Developer",
-        quote: "Lorem ipsum UX/UI Designer ezifz iugef zieg fzieg",
+        quote: "I understand that...",
         altMainImg: "Fox with human body",
         srcMainImg: SkillsAnimals.Fox,
         mainColor: colorsRoles.Brand02,
@@ -83,7 +83,7 @@ export const Skills =  [
     {
         titleNav: PhotoRetoucher,
         mainTitle: "Photo Retoucher",
-        quote: "Lorem ipsum UX/UI Designer ezifz iugef zieg fzieg",
+        quote: "I understand that ...",
         altMainImg: "Horse with human body",
         srcMainImg: SkillsAnimals.Horse,
         mainColor: colorsRoles.Brand03,
@@ -500,6 +500,168 @@ export const CreativeDeveloperProjects = [
 ]
 
 export const PhotoRetoucherProjects = [
+    {
+        title: "Eat Brussels Festival",
+        skill: "Photo Retoucher",
+        slug: "EatBrusselsFestival",
+        description: "description du projet",
+        thumbnailproject : EatBxlProject.EatBXLMainPicture,
+        roles: [
+            {
+                titlerole: "Team",
+                descriptionrole:"Fred",
+            },
+            {
+                titlerole: "Role",
+                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+            },
+            {
+                titlerole: "Time",
+                descriptionrole:"Around 4 mounths",
+            },
+        ],
+        videoportrait:false,
+        videolandscape: false,
+        landscape:false,
+        carre:true,
+        rectanglelandscape:false,
+        rectangleportrait:true,
+        headerImage: EatBxlProject.EatBXLHeader,
+        images: [
+            {
+                src: EatBxlProject.EatBXLPict01,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: true,
+            },
+            {
+                src: EatBxlProject.EatBXLPict02,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+            {
+                src: EatBxlProject.EatBXLPict03,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+            {
+                src: EatBxlProject.EatBXLPict04,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+            {
+                src: EatBxlProject.EatBXLPict05,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },{
+                src: EatBxlProject.EatBXLPict06,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },{
+                src: EatBxlProject.EatBXLPict07,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },{
+                src: EatBxlProject.EatBXLPict08,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+            {
+                src: EatBxlProject.EatBXLPict09,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+            {
+                src: EatBxlProject.EatBXLPict10,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+
+
+
+
+        ]
+    },
+    {
+        title: "Eat Brussels Festival",
+        skill: "Photo Retoucher",
+        slug: "EatBrusselsFestival",
+        description: "description du projet",
+        thumbnailproject : EatBxlProject.EatBXLMainPicture,
+        roles: [
+            {
+                titlerole: "Team",
+                descriptionrole:"Fred",
+            },
+            {
+                titlerole: "Role",
+                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+            },
+            {
+                titlerole: "Time",
+                descriptionrole:"Around 4 mounths",
+            },
+        ],
+        videoportrait:false,
+        videolandscape: false,
+        landscape:false,
+        carre:true,
+        rectanglelandscape:false,
+        rectangleportrait:true,
+        headerImage: EatBxlProject.EatBXLHeader,
+        images: [
+            {
+                src: EatBxlProject.EatBXLPict01,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: true,
+            },
+            {
+                src: EatBxlProject.EatBXLPict02,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+            {
+                src: EatBxlProject.EatBXLPict03,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+            {
+                src: EatBxlProject.EatBXLPict04,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+            {
+                src: EatBxlProject.EatBXLPict05,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },{
+                src: EatBxlProject.EatBXLPict06,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },{
+                src: EatBxlProject.EatBXLPict07,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },{
+                src: EatBxlProject.EatBXLPict08,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+            {
+                src: EatBxlProject.EatBXLPict09,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+            {
+                src: EatBxlProject.EatBXLPict10,
+                altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
+            },
+
+
+
+
+        ]
+    },
     {
         title: "Eat Brussels Festival",
         skill: "Photo Retoucher",
