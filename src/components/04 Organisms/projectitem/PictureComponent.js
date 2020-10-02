@@ -15,7 +15,7 @@ const PictureComponent = (props) => {
     }
 
     return <>
-        <Wrapper width={props.width} onClick={handleOnClick}>
+        <Wrapper bigPicture={props.bigPicture} onClick={handleOnClick}>
             <AspectRatio
                 video={props.video}
                 videoportrait={props.videoportrait}
@@ -31,6 +31,8 @@ const PictureComponent = (props) => {
         <LightBoxPicture
             onClick={handleOnClick}
             isactive={active}
+            src={props.src}
+            alt={props.alt}
         />
 
     </>
@@ -43,7 +45,7 @@ export const Wrapper = styled.a`
 display: block;
 position: relative;
 overflow: hidden;
-width: ${props => props.width};
+max-width: ${props => props.bigPicture? "50%" : "300px"};
 `;
 
 
@@ -64,7 +66,7 @@ background-color: ${colorsRoles.White};
 opacity: 0;
 transition: ${transitions.basic2};
 cursor:pointer;
-z-index: 999;
+z-index: 3;
 }
 &:hover {
     &:before {

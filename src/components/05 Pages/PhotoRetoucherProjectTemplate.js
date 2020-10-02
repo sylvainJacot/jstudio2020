@@ -23,8 +23,7 @@ const PhotoRetoucherProjectTemplate = ({match}) => {
             carre={photoretoucherproject.carre}
             rectanglelandscape={photoretoucherproject.rectanglelandscape}
             rectangleportrait={photoretoucherproject.rectangleportrait}
-            src={TestImage}
-            width={"400px"}
+            pictureItem={photoretoucherproject.images}
         />
 
     </>

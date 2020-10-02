@@ -9,7 +9,7 @@ const LightBoxPicture = (props) => {
 
     return <>
         <Wrapper onClick={props.onClick} isactive={props.isactive}>
-            <img src={TestImage}/>
+            <img src={props.src} alt={props.alt}/>
         </Wrapper>
 
     </>

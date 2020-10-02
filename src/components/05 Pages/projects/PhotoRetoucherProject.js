@@ -7,6 +7,51 @@ import BackButton from "../../02 Molecules/BackButton";
 import PhotoProjectHeader from "../../04 Organisms/projectitem/PhotoProjectHeader";
 import PictureComponent, {AspectRatio} from "../../04 Organisms/projectitem/PictureComponent";
 
+
+
+const PhotoRetoucherProject = (props) => {
+
+    let pictureComponent = props.pictureItem;
+
+    return <>
+        <Box>
+            <BackButton/>
+            <PhotoProjectHeader/>
+            <ProjectMainTitle
+                title={props.title}
+                titlerole={props.titlerole}
+                description={props.descriptionrole}
+                roles={props.roles}
+            />
+
+            <GalleryWrapper>
+            {
+                pictureComponent.map((item,index) => (
+                    <PictureComponent
+                        key={index}
+                        video={props.video}
+                        videoportrait={props.videoportrait}
+                        videolandscape={props.videolandscape}
+                        landscape={props.landscape}
+                        carre={props.carre}
+                        rectanglelandscape={props.rectanglelandscape}
+                        rectangleportrait={props.rectangleportrait}
+                        src={item.src}
+                        alt={item.altImg}
+                        bigPicture={item.bigPicture}
+                    />
+                ))
+            }
+            </GalleryWrapper>
+
+
+        </Box>
+    </>
+
+};
+
+export default PhotoRetoucherProject;
+
 export const Box = styled.div`
 
 margin-top: 64px;
@@ -33,34 +78,6 @@ height: 400px;
 
 `;
 
-const PhotoRetoucherProject = (props) => {
+export const GalleryWrapper = styled.div`
 
-
-    return <>
-        <Box>
-            <BackButton/>
-            <PhotoProjectHeader/>
-            <ProjectMainTitle
-                title={props.title}
-                titlerole={props.titlerole}
-                description={props.descriptionrole}
-                roles={props.roles}
-            />
-            <PictureComponent
-                video={props.video}
-                videoportrait={props.videoportrait}
-                videolandscape={props.videolandscape}
-                landscape={props.landscape}
-                carre={props.carre}
-                rectanglelandscape={props.rectanglelandscape}
-                rectangleportrait={props.rectangleportrait}
-                width={props.width}
-                src={props.src}
-            />
-
-        </Box>
-    </>
-
-};
-
-export default PhotoRetoucherProject;
+`;

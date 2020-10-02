@@ -505,10 +505,11 @@ export const PhotoRetoucherProjects = [
         skill: "Photo Retoucher",
         slug: "EatBrusselsFestival",
         description: "description du projet",
+        thumbnailproject : EatBxlProject.EatBXLMainPicture,
         roles: [
             {
                 titlerole: "Team",
-                descriptionrole:"6 people",
+                descriptionrole:"Fred",
             },
             {
                 titlerole: "Role",
@@ -519,53 +520,60 @@ export const PhotoRetoucherProjects = [
                 descriptionrole:"Around 4 mounths",
             },
         ],
-        videoportrait: false,
+        videoportrait:false,
         videolandscape: false,
         landscape:false,
         carre:true,
         rectanglelandscape:false,
-        rectangleportrait:false,
+        rectangleportrait:true,
         headerImage: EatBxlProject.EatBXLHeader,
-        decorativeimage: EatBxlProject.EatBXlDeco,
-        maincolor: projectColors.Clavie,
-        thumbnailproject : EatBxlProject.EatBXLMainPicture,
         images: [
             {
                 src: EatBxlProject.EatBXLPict01,
                 altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: true,
             },
             {
                 src: EatBxlProject.EatBXLPict02,
                 altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
             },
             {
                 src: EatBxlProject.EatBXLPict03,
                 altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
             },
             {
                 src: EatBxlProject.EatBXLPict04,
                 altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
             },
             {
                 src: EatBxlProject.EatBXLPict05,
                 altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
             },{
                 src: EatBxlProject.EatBXLPict06,
                 altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
             },{
                 src: EatBxlProject.EatBXLPict07,
                 altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
             },{
                 src: EatBxlProject.EatBXLPict08,
                 altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
             },
             {
                 src: EatBxlProject.EatBXLPict09,
                 altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
             },
             {
                 src: EatBxlProject.EatBXLPict10,
                 altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture: false,
             },
 
 
