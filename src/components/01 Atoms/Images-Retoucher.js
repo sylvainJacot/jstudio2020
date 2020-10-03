@@ -45,6 +45,21 @@ import AlmahaFolio08Img from "../../media/img/Projects/03_Photo Retoucher/HOTELM
 import AlmahaFolio09Img from "../../media/img/Projects/03_Photo Retoucher/HOTELMARRAKECH/H_Almaha-Folio09.png";
 import AlmahaFolio10Img from "../../media/img/Projects/03_Photo Retoucher/HOTELMARRAKECH/H_Almaha-Folio10.png";
 
+/*       ------- WTF -------        */
+import WTFDecoImg from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Deco.png";
+import WTFThumbnailImg from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Thumbnail.png";
+import WTFFolio01Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio01.png";
+import WTFFolio02Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio02.png";
+import WTFFolio03Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio03.png";
+import WTFFolio04Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio04.png";
+import WTFFolio05Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio05.png";
+import WTFFolio06Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio06.png";
+import WTFFolio07Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio07.png";
+import WTFFolio08Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio08.png";
+import WTFFolio09Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio09.png";
+import WTFFolio10Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio10.png";
+import WTFFolio11Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio11.png";
+import WTFFolio12Img from "../../media/img/Projects/03_Photo Retoucher/WTF/WTF-Folio12.png";
 
 export const EatBxlProject = {
     EatBXLMainPicture : EatBXLMainPictureImg,
@@ -95,4 +110,21 @@ export const AlmahaProject = {
     AlmahaFolio08 : AlmahaFolio08Img,
     AlmahaFolio09 : AlmahaFolio09Img,
     AlmahaFolio10 : AlmahaFolio10Img,
+}
+
+export const WTFPorject = {
+    WTFDeco : WTFDecoImg,
+    WTFThumbnail : WTFThumbnailImg,
+    WTFFolio01 : WTFFolio01Img,
+    WTFFolio02 : WTFFolio02Img,
+    WTFFolio03 : WTFFolio03Img,
+    WTFFolio04 : WTFFolio04Img,
+    WTFFolio05 : WTFFolio05Img,
+    WTFFolio06 : WTFFolio06Img,
+    WTFFolio07 : WTFFolio07Img,
+    WTFFolio08 : WTFFolio08Img,
+    WTFFolio09 : WTFFolio09Img,
+    WTFFolio10 : WTFFolio10Img,
+    WTFFolio11 : WTFFolio11Img,
+    WTFFolio12 : WTFFolio12Img,
 }

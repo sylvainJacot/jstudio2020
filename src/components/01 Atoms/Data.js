@@ -24,7 +24,7 @@ import {
     CSS3,
     Javascript, CoffeeBreak, Streching
 } from "./Icons-Methodo";
-import {AlmahaProject, EatBxlProject, MercoProject, PrimeMinisterProject} from "./Images-Retoucher";
+import {AlmahaProject, EatBxlProject, MercoProject, PrimeMinisterProject, WTFPorject} from "./Images-Retoucher";
 
 
 export const pathuiux = "/ux-ui-designer";
@@ -669,7 +669,7 @@ export const PhotoRetoucherProjects = [
     {
         title: "Almaha Marrakech",
         skill: "Photo Retoucher",
-        slug: "AlmahaMarrakech",
+        slug: "Almaha Marrakech hotel in Morocco",
         description: "Almaha Marrakech",
         thumbnailproject : AlmahaProject.AlmahaThumbnail,
         roles: [
@@ -733,6 +733,90 @@ export const PhotoRetoucherProjects = [
                 altImg: "Almaha Marrakech Hotel picture portfolio",
                 rectangleportrait,
             },
+
+        ]
+    },
+    {
+        title: "What the fun",
+        skill: "Photo Retoucher",
+        slug: "whatthefun",
+        description: "What the Fun, a Stand up comedy club",
+        thumbnailproject : WTFPorject.WTFThumbnail,
+        roles: [
+            {
+                titlerole: "Role",
+                descriptionrole:"Post-production",
+            },
+            {
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
+            },
+        ],
+        headerImage: WTFPorject.WTFDeco,
+        images: [
+            {
+                src: WTFPorject.WTFFolio01,
+                altImg: "What the fun picture portfolio",
+                bigPicture,
+                rectangleportrait,
+            },
+            {
+                src: WTFPorject.WTFFolio02,
+                altImg: "What the fun picture portfolio",
+                bigPicture,
+                carre,
+            },
+            {
+                src: WTFPorject.WTFFolio03,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio04,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio05,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio06,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio07,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio08,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio09,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio10,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio11,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio12,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+
 
         ]
     },

@@ -36,4 +36,5 @@ background-color: ${colorsRoles.LightGrey2};
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+padding-bottom: 40px;
 `;
