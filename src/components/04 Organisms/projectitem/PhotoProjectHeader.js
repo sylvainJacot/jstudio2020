@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import {media} from "../../01 Atoms/MediaQueries";
-import TestImg from "../../../media/img/Projects/03_Photo Retoucher/EATBRUSSELS2019/EatDeco.png"
 
 
-const PhotoProjectHeader = () => {
+const PhotoProjectHeader = (props) => {
     return <>
-        <Wrapper headerbgimge={TestImg}>
+        <Wrapper headerbgimge={props.headerdeco}>
 
         </Wrapper>
 

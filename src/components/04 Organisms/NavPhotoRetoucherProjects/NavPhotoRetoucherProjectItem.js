@@ -41,6 +41,7 @@ transition: ${transitions.basic1};
     font-family: PlayfairDisplay-Regular_Black;
     font-size: 2rem;
     line-height: 1.5;
+    color: ${colorsRoles.DarkGrey};
 }
 
 `;

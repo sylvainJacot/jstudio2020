@@ -5,7 +5,7 @@ import {media} from "../../01 Atoms/MediaQueries";
 import ProjectMainTitle from "../../04 Organisms/projectitem/ProjectMainTitle";
 import BackButton from "../../02 Molecules/BackButton";
 import PhotoProjectHeader from "../../04 Organisms/projectitem/PhotoProjectHeader";
-import PictureComponent, {AspectRatio} from "../../04 Organisms/projectitem/PictureComponent";
+import PictureComponent from "../../04 Organisms/projectitem/PictureComponent";
 
 
 
@@ -16,7 +16,7 @@ const PhotoRetoucherProject = (props) => {
     return <>
         <Box>
             <BackButton/>
-            <PhotoProjectHeader/>
+            <PhotoProjectHeader headerdeco={props.headerdeco}/>
             <ProjectMainTitle
                 title={props.title}
                 titlerole={props.titlerole}
@@ -30,13 +30,13 @@ const PhotoRetoucherProject = (props) => {
                 pictureComponent.map((item,index) => (
                     <PictureComponent
                         key={index}
-                        video={props.video}
-                        videoportrait={props.videoportrait}
-                        videolandscape={props.videolandscape}
-                        landscape={props.landscape}
-                        carre={props.carre}
-                        rectanglelandscape={props.rectanglelandscape}
-                        rectangleportrait={props.rectangleportrait}
+                        video={item.video}
+                        videoportrait={item.videoportrait}
+                        videolandscape={item.videolandscape}
+                        landscape={item.landscape}
+                        carre={item.carre}
+                        rectanglelandscape={item.rectanglelandscape}
+                        rectangleportrait={item.rectangleportrait}
                         src={item.src}
                         alt={item.altImg}
                         bigPicture={item.bigPicture}

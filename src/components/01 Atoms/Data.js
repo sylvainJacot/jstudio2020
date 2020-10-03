@@ -24,8 +24,8 @@ import {
     CSS3,
     Javascript, CoffeeBreak, Streching
 } from "./Icons-Methodo";
-import {EatBxlProject} from "./Images-Retoucher";
-import PhotoRetoucherProject from "../05 Pages/projects/PhotoRetoucherProject";
+import {AlmahaProject, EatBxlProject, MercoProject, PrimeMinisterProject} from "./Images-Retoucher";
+
 
 export const pathuiux = "/ux-ui-designer";
 export const pathdev = "/creative-developer";
@@ -54,6 +54,13 @@ const PhotoRetoucher = (
         Retoucher
     </>
 );
+
+export const videoportrait = "videoportrait : true";
+export const videolandscape = "videolandscape : true";
+export const carre = "carre : true";
+export const rectanglelandscape = "rectanglelandscape : true";
+export const rectangleportrait = "rectangleportrait : true";
+export const bigPicture = "bigPicture: true";
 
 
 export const Skills =  [
@@ -504,76 +511,67 @@ export const PhotoRetoucherProjects = [
         title: "Eat Brussels Festival",
         skill: "Photo Retoucher",
         slug: "EatBrusselsFestival",
-        description: "description du projet",
-        thumbnailproject : EatBxlProject.EatBXLMainPicture,
+        description: "The Eat Brussels Festival promote great names in Brussels gastronomy",
+        thumbnailproject : EatBxlProject.EatBXLBThumbnail,
         roles: [
             {
-                titlerole: "Team",
-                descriptionrole:"Fred",
-            },
-            {
                 titlerole: "Role",
-                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+                descriptionrole:"Post-production",
             },
             {
-                titlerole: "Time",
-                descriptionrole:"Around 4 mounths",
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
             },
         ],
-        videoportrait:false,
-        videolandscape: false,
-        landscape:false,
-        carre:true,
-        rectanglelandscape:false,
-        rectangleportrait:true,
-        headerImage: EatBxlProject.EatBXLHeader,
+        headerImage: EatBxlProject.EatBXlDeco,
         images: [
             {
-                src: EatBxlProject.EatBXLPict01,
+                src: EatBxlProject.EatBXLBeforeAfter,
                 altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: true,
+                bigPicture,
+                rectanglelandscape,
             },
             {
                 src: EatBxlProject.EatBXLPict02,
                 altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                rectangleportrait,
             },
             {
                 src: EatBxlProject.EatBXLPict03,
                 altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                rectangleportrait,
             },
             {
                 src: EatBxlProject.EatBXLPict04,
                 altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                rectangleportrait,
             },
             {
                 src: EatBxlProject.EatBXLPict05,
                 altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                rectangleportrait,
             },{
                 src: EatBxlProject.EatBXLPict06,
                 altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                rectangleportrait,
             },{
                 src: EatBxlProject.EatBXLPict07,
                 altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                rectangleportrait,
             },{
                 src: EatBxlProject.EatBXLPict08,
                 altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                rectangleportrait,
             },
             {
                 src: EatBxlProject.EatBXLPict09,
                 altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                rectangleportrait,
             },
             {
                 src: EatBxlProject.EatBXLPict10,
                 altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                rectangleportrait,
             },
 
 
@@ -582,170 +580,165 @@ export const PhotoRetoucherProjects = [
         ]
     },
     {
-        title: "Eat Brussels Festival",
+        title: "Belgian Prime Minister",
         skill: "Photo Retoucher",
-        slug: "EatBrusselsFestival",
-        description: "description du projet",
-        thumbnailproject : EatBxlProject.EatBXLMainPicture,
+        slug: "PrimeMinister",
+        description: "Charles Michel is a Belgian politician who was Prime Minister of Belgium between 2014-2019",
+        thumbnailproject : PrimeMinisterProject.PrimeMinisterMainThumbnail,
         roles: [
             {
-                titlerole: "Team",
-                descriptionrole:"Fred",
-            },
-            {
                 titlerole: "Role",
-                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+                descriptionrole:"Post-production",
             },
             {
-                titlerole: "Time",
-                descriptionrole:"Around 4 mounths",
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
             },
         ],
-        videoportrait:false,
-        videolandscape: false,
-        landscape:false,
-        carre:true,
-        rectanglelandscape:false,
-        rectangleportrait:true,
-        headerImage: EatBxlProject.EatBXLHeader,
+        headerImage: PrimeMinisterProject.PrimeMinisterMainDeco,
         images: [
             {
-                src: EatBxlProject.EatBXLPict01,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: true,
+                src: PrimeMinisterProject.PrimeMinisterMainBeforeAfter,
+                altImg: "Prime Minister Charles Michel picture portfolio",
+                bigPicture,
+                rectanglelandscape,
             },
             {
-                src: EatBxlProject.EatBXLPict02,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                src: PrimeMinisterProject.PrimeMinisterMainPicture,
+                altImg: "Prime Minister Charles Michel picture portfolio",
+                bigPicture,
+                rectanglelandscape,
             },
             {
-                src: EatBxlProject.EatBXLPict03,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                src: PrimeMinisterProject.PrimeMinisterMainFolio01,
+                altImg: "Prime Minister Charles Michel picture portfolio",
+                rectangleportrait
             },
             {
-                src: EatBxlProject.EatBXLPict04,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                src: PrimeMinisterProject.PrimeMinisterMainFolio02,
+                altImg: "Prime Minister Charles Michel picture portfolio",
+                rectangleportrait,
             },
-            {
-                src: EatBxlProject.EatBXLPict05,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },{
-                src: EatBxlProject.EatBXLPict06,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },{
-                src: EatBxlProject.EatBXLPict07,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },{
-                src: EatBxlProject.EatBXLPict08,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },
-            {
-                src: EatBxlProject.EatBXLPict09,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },
-            {
-                src: EatBxlProject.EatBXLPict10,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },
-
-
 
 
         ]
     },
     {
-        title: "Eat Brussels Festival",
+        title: "Mercedes",
         skill: "Photo Retoucher",
-        slug: "EatBrusselsFestival",
-        description: "description du projet",
-        thumbnailproject : EatBxlProject.EatBXLMainPicture,
+        slug: "Mercedes",
+        description: "Mercedes car dealership",
+        thumbnailproject : MercoProject.MercoThumbnail,
         roles: [
             {
-                titlerole: "Team",
-                descriptionrole:"Fred",
-            },
-            {
                 titlerole: "Role",
-                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+                descriptionrole:"Post-production",
             },
             {
-                titlerole: "Time",
-                descriptionrole:"Around 4 mounths",
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
             },
         ],
-        videoportrait:false,
-        videolandscape: false,
-        landscape:false,
-        carre:true,
-        rectanglelandscape:false,
-        rectangleportrait:true,
-        headerImage: EatBxlProject.EatBXLHeader,
+        headerImage: MercoProject.MercoDeco,
         images: [
             {
-                src: EatBxlProject.EatBXLPict01,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: true,
+                src: MercoProject.MercoMain,
+                altImg: "Mercedes Manes picture portfolio",
+                bigPicture,
+                rectanglelandscape,
             },
             {
-                src: EatBxlProject.EatBXLPict02,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                src: MercoProject.MercoBA,
+                altImg: "Mercedes Manes picture portfolio",
+                bigPicture,
+                rectanglelandscape,
             },
             {
-                src: EatBxlProject.EatBXLPict03,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                src: MercoProject.MercoFolio01,
+                altImg: "Mercedes Manes picture portfolio",
+                rectangleportrait,
             },
             {
-                src: EatBxlProject.EatBXLPict04,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
+                src: MercoProject.MercoFolio02,
+                altImg: "Mercedes Manes picture portfolio",
+                rectangleportrait,
             },
-            {
-                src: EatBxlProject.EatBXLPict05,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },{
-                src: EatBxlProject.EatBXLPict06,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },{
-                src: EatBxlProject.EatBXLPict07,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },{
-                src: EatBxlProject.EatBXLPict08,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },
-            {
-                src: EatBxlProject.EatBXLPict09,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },
-            {
-                src: EatBxlProject.EatBXLPict10,
-                altImg: "Eat Brussels Festival picture portfolio",
-                bigPicture: false,
-            },
-
-
-
 
         ]
     },
+    {
+        title: "Almaha Marrakech",
+        skill: "Photo Retoucher",
+        slug: "AlmahaMarrakech",
+        description: "Almaha Marrakech",
+        thumbnailproject : AlmahaProject.AlmahaThumbnail,
+        roles: [
+            {
+                titlerole: "Role",
+                descriptionrole:"Post-production",
+            },
+            {
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
+            },
+        ],
+        headerImage: AlmahaProject.AlmahaDeco,
+        images: [
+            {
+                src: AlmahaProject.AlmahaFolio02,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio03,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio04,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio05,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio06,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio07,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio08,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio09,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },            {
+                src: AlmahaProject.AlmahaFolio10,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio01,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectangleportrait,
+            },
 
-
+        ]
+    },
+  
 ]
+
 
 
 

@@ -37,8 +37,9 @@ flex-direction: column;
 align-items: center;
 
 ${media.desktop`
-flex-direction: unset;
+flex-direction: row;
 align-items: unset;
+justify-content: center;
 `};
 
 `;

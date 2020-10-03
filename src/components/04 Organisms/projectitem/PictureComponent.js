@@ -47,7 +47,6 @@ display: block;
 width: ${props => props.bigPicture? "304px" : "240px"};
 flex-grow: ${props => props.bigPicture? "2" : "1"};
 margin: 32px;
-box-shadow: 0 10px 18px ${colorsRoles.DarkGrey}50, 0 10px 11px ${colorsRoles.Black}70;
 
 ${media.tablet`
 width: ${props => props.bigPicture? "400px" : "200px"};
@@ -63,6 +62,7 @@ export const AspectRatio = styled.div`
 overflow: hidden;
 position: relative;
 height: max-content;
+box-shadow: 0 10px 18px ${colorsRoles.DarkGrey}50, 0 10px 11px ${colorsRoles.Black}70;
 
 &:before {
 position: absolute;
