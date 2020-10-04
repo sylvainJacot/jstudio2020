@@ -26,6 +26,9 @@ z-index: 3;
 background-color: ${props => props.isabouton ?  colorsRoles.White : colorsRoles.DarkGrey};
 padding: 0 16px;
 transition: ${transitions.basic1};
+-webkit-animation: ${transitions.basic1};
+-moz-animation: ${transitions.basic1};
+-o-animation: ${transitions.basic1};
 
 ${media.desktop `
 width: 80px;
@@ -52,10 +55,16 @@ ${media.desktop `
     &:hover {
 width: 144px;
 transition: ${transitions.basic2};
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basicé};
 
   & div > span {
   height: 32px;
   transition: ${transitions.basic1};
+    -webkit-animation: ${transitions.basic1};
+    -moz-animation: ${transitions.basic1};
+    -o-animation: ${transitions.basic1};
   transition-delay: .1s;
    &:nth-child(2) {
    margin: 0 16px;

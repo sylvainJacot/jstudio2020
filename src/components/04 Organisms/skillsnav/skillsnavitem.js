@@ -54,7 +54,9 @@ margin-top: 32px;
 text-align: right;
 color: ${colorsRoles.White};
 transition: ${transitions.basic2};
-moz-transition: ${transitions.basic2}
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basic2};
 ${media.mobileL `
 margin-top: 40px;
 `}
@@ -87,8 +89,10 @@ right: 0;
 width: 40px;
 height: 2px;
 background-color: ${props => props.colorBrand};
-transition: ${transitions.basic2}
--moz-transition: ${transitions.basic2}
+transition: ${transitions.basic2};
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basic2};
 ${media.tablet`
 bottom: -16px;
 `}
@@ -133,8 +137,10 @@ ${media.desktop`
 display: block;
 animation: ${Breathe} 5s linear infinite;
 opacity: 1;
-transition: ${transitions.basic1}
--moz-transition: ${transitions.basic1}
+transition: ${transitions.basic1};
+-webkit-animation: ${transitions.basic1};
+-moz-animation: ${transitions.basic1};
+-o-animation: ${transitions.basic1};
 `}
 ${media.desktopL`
 bottom: 2%;
@@ -164,7 +170,9 @@ height: auto;
 left: -80px;
 top: 64px;
 transition: ${transitions.easeOut};
--moz-transition: ${transitions.easeOut};
+-webkit-animation: ${transitions.easeOut};
+-moz-animation: ${transitions.easeOut};
+-o-animation: ${transitions.easeOut};
 ${media.tablet`
 width: 400px;
 top: 0;
@@ -186,10 +194,17 @@ bottom: -32%;
 &:hover {
     cursor: pointer;
     transition: ${transitions.basic1}
-    moz-transition: ${transitions.basic1}
+    -webkit-transition: ${transitions.basic1};
+    -moz-transition:    ${transitions.basic1};
+    -o-transition:      ${transitions.basic1};
+    -ms-transition:     ${transitions.basic1};
+
    img {
-      transition: ${transitions.basic2}
-      moz-transition: ${transitions.basic2}
+      transition: ${transitions.basic1};
+    -webkit-transition: ${transitions.basic1};
+    -moz-transition:    ${transitions.basic1};
+    -o-transition:      ${transitions.basic1};
+    -ms-transition:     ${transitions.basic1};
       ${media.desktop`
         width: 560px;
         bottom: -80%;
@@ -201,21 +216,30 @@ bottom: -32%;
     ${ImgShadow} {
     display: none;
     ${backgrounds.RadialBg02Transparent};
-    transition: ${transitions.basic1}
-    moz-transition: ${transitions.basic1}
+        transition: ${transitions.basic1};
+        -webkit-transition: ${transitions.basic1};
+        -moz-transition:    ${transitions.basic1};
+        -o-transition:      ${transitions.basic1};
+        -ms-transition:     ${transitions.basic1};
     }
     ${DisciplineNavItemText} {
         & > h1:after {
         width: 80px;
-        transition: ${transitions.basic2}
-        moz-transition: ${transitions.basic2}
+        transition: ${transitions.basic2};
+        -webkit-transition: ${transitions.basic2};
+        -moz-transition:    ${transitions.basic2};
+        -o-transition:      ${transitions.basic2};
+        -ms-transition:     ${transitions.basic2};
         }
         ${media.desktop`
         &  a, span {
         visibility: visible;
         padding: 8px 24px 8px 16px;
         transition: ${transitions.basic1};
-        moz-transition: ${transitions.basic1}
+        -webkit-transition: ${transitions.basic1};
+        -moz-transition:    ${transitions.basic1};
+        -o-transition:      ${transitions.basic1};
+        -ms-transition:     ${transitions.basic1};
       `}
         }
     }

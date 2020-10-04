@@ -30,7 +30,10 @@ margin-bottom: 0px;
 &:hover {
         & svg {
         margin-left: 32px;
-        transition: ${transitions.basic1};
+            transition: ${transitions.basic1};
+            -webkit-animation: ${transitions.basic1};
+            -moz-animation: ${transitions.basic1};
+            -o-animation: ${transitions.basic1};
         }
     }
 `}
@@ -88,6 +91,9 @@ margin-bottom: 0px;
         & svg {
         margin-left: 32px;
         transition: ${transitions.basic1};
+        -webkit-animation: ${transitions.basic1};
+        -moz-animation: ${transitions.basic1};
+        -o-animation: ${transitions.basic1};
         }
     }
 `}

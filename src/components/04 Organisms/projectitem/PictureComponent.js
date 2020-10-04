@@ -77,6 +77,9 @@ left: 0;
 background-color: ${colorsRoles.White};
 opacity: 0;
 transition: ${transitions.basic2};
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basic2};
 cursor:pointer;
 z-index: 3;
 }
@@ -84,6 +87,9 @@ z-index: 3;
     &:before {
     opacity: 0.1;
     transition: ${transitions.basic1};
+    -webkit-animation: ${transitions.basic1};
+    -moz-animation: ${transitions.basic1};
+    -o-animation: ${transitions.basic1};
     }
 }
 

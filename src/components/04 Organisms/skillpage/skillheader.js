@@ -130,7 +130,10 @@ align-items: unset;
     left: 50%;
     transform: translateX(-50%);
     background-color: ${props => props.MainColor};
-    transition: ${transitions.basic2}
+    transition: ${transitions.basic2};
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basic2};
     ${media.tablet`
     bottom: -16px;
     `}

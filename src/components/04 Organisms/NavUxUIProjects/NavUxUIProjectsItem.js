@@ -95,6 +95,9 @@ height: 200px;
 position: relative;
 background-color: ${props => props.bgColor};
 transition: ${transitions.basic2};
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basic2};
 
 ${media.tablet`
 height: 400px;

@@ -30,6 +30,9 @@ margin-bottom: 8px;
     border-radius: 0 0 100px 0;
     background-color: ${props => props.isabouton};
     transition: ${transitions.basic2};
+    -webkit-animation: ${transitions.basic2};
+    -moz-animation: ${transitions.basic2};
+    -o-animation: ${transitions.basic2};
     ${media.desktop`
     margin-bottom: 8px;
     height: 16px;

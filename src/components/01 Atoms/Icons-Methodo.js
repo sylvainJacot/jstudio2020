@@ -151,7 +151,7 @@ export const GraphicTablet = {
     logo: GraphicTabletLogo,
 }
 export const CrossBrowsersTesting = {
-    title: "Cross Browsers Testing Tablet",
+    title: "Cross Browsers Testing",
     altImage: "Cross Browsers Testing logo",
     logo: CrossBrowsersTestingLogo,
 }

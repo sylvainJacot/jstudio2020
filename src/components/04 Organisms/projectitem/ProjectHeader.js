@@ -25,6 +25,9 @@ padding-top: 24px;
 width: 80%;
 height: 100%;
 transition: ${transitions.basic2};
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basic2};
 display: flex;
 justify-content: center;
 align-items: center;
@@ -32,6 +35,9 @@ align-items: center;
 &:hover {
 transform: scale(.9);
 transition: ${transitions.basic1};
+-webkit-animation: ${transitions.basic1};
+-moz-animation: ${transitions.basic1};
+-o-animation: ${transitions.basic1};
 }
 
 ${media.desktop`
