@@ -72,8 +72,11 @@ top: 100%;
 right: 0;
 bottom: 0;
 left: 0;
-    background-color: ${colorsRoles.White}90;
+background-color: ${colorsRoles.White}90;
 transition: ${transitions.basic2};
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basic2};
 }
 ////////////////// HOVER EFFECT
 
@@ -81,6 +84,9 @@ transition: ${transitions.basic2};
 &:after {
 top: 50%;
 transition: ${transitions.basic2};
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basic2};
 }
 }
 & img {

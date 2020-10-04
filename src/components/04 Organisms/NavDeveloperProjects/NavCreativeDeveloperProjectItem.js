@@ -111,6 +111,9 @@ transform: translate(50%,-50%);
 border-radius: 0px 0px 16px 16px;
 z-index: -1;
 transition: ${transitions.basic2};
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basic2};
 display: flex;
 align-items: center;
 justify-content: center;
@@ -181,6 +184,9 @@ background: linear-gradient(to bottom, transparent, ${colorsRoles.DarkGrey});
 filter: blur(3px);
 opacity: .4;
 transition: ${transitions.basic1};
+-webkit-animation: ${transitions.basic1};
+-moz-animation: ${transitions.basic1};
+-o-animation: ${transitions.basic1};
 }
 
 :before {
@@ -202,6 +208,9 @@ ${media.desktop`
     ${ToolsBoxProject} {
     bottom: -143px;
     transition: ${transitions.basic1};
+    -webkit-animation: ${transitions.basic1};
+    -moz-animation: ${transitions.basic1};
+    -o-animation: ${transitions.basic1};
     } 
 }
 `}

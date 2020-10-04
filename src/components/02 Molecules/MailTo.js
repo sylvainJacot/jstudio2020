@@ -28,6 +28,9 @@ margin-bottom: 0px;
         & svg {
         margin-left: 32px;
         transition: ${transitions.basic1};
+        -webkit-animation: ${transitions.basic1};
+        -moz-animation: ${transitions.basic1};
+        -o-animation: ${transitions.basic1};
         }
     }
 `}
@@ -43,6 +46,9 @@ font-size: 2rem;
 & svg {
 margin-left: 16px;
 transition: ${transitions.basic1};
+-webkit-animation: ${transitions.basic1};
+-moz-animation: ${transitions.basic1};
+-o-animation: ${transitions.basic1};
 }
 \`;
 `;

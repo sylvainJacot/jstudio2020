@@ -155,7 +155,7 @@ export const UIUXProjects = [
             },
             {
                 titlerole: "Time",
-                descriptionrole:"Around 4 mounths",
+                descriptionrole:"Around 4 months",
             },
         ],
         slug: "Evergreen",
@@ -200,7 +200,7 @@ export const UIUXProjects = [
             },
             {
                 titlerole: "Time",
-                descriptionrole:"Around 4 mounths",
+                descriptionrole:"Around 3 months",
             },
         ],
         slug: "Samsung",
@@ -313,7 +313,7 @@ export const UIUXProjects = [
             },
             {
                 titlerole: "Time",
-                descriptionrole:"Around 1 week",
+                descriptionrole:"Around 3 weeks",
             },
         ],
         slug: "Telenet",
@@ -378,11 +378,11 @@ export const CreativeDeveloperProjects = [
         roles: [
             {
                 titlerole: "Team",
-                descriptionrole:"6 people",
+                descriptionrole:"3 people",
             },
             {
                 titlerole: "Role",
-                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+                descriptionrole:"(re)-Design of the website and implementation with in html/css/js",
             },
             {
                 titlerole: "Website",
@@ -431,15 +431,15 @@ export const CreativeDeveloperProjects = [
         roles: [
             {
                 titlerole: "Team",
-                descriptionrole:"6 people",
+                descriptionrole:"3 people",
             },
             {
                 titlerole: "Role",
-                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+                descriptionrole:"Design the entire platform based on the wireframes provided. Integration of the website (html/css)",
             },
             {
-                titlerole: "Time",
-                descriptionrole:"Around 4 mounths",
+                titlerole: "Website",
+                descriptionrole:"www.so-smart.be",
             },
         ],
         slug: "SoSmart",
@@ -477,15 +477,15 @@ export const CreativeDeveloperProjects = [
         roles: [
             {
                 titlerole: "Team",
-                descriptionrole:"6 people",
+                descriptionrole:"3 people",
             },
             {
                 titlerole: "Role",
-                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+                descriptionrole:"Design the entire platform based on the wireframes provided. Integration of the website (html/css)",
             },
             {
-                titlerole: "Time",
-                descriptionrole:"Around 4 mounths",
+                titlerole: "Website",
+                descriptionrole:"www.parentreprise.be",
             },
         ],
         slug: "Parentreprise",
@@ -529,6 +529,10 @@ export const PhotoRetoucherProjects = [
             {
                 titlerole: "Pictures",
                 descriptionrole:"FredSablon",
+            },
+            {
+                titlerole: "Client",
+                descriptionrole:"www.eat.brussels/fr",
             },
         ],
         headerImage: EatBxlProject.EatBXlDeco,
@@ -612,6 +616,10 @@ export const PhotoRetoucherProjects = [
                 titlerole: "Pictures",
                 descriptionrole:"FredSablon",
             },
+            {
+                titlerole: "Client",
+                descriptionrole:"Charles Michel",
+            },
         ],
         headerImage: PrimeMinisterProject.PrimeMinisterMainDeco,
         images: [
@@ -620,22 +628,26 @@ export const PhotoRetoucherProjects = [
                 altImg: "Prime Minister Charles Michel picture portfolio",
                 bigPicture,
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: PrimeMinisterProject.PrimeMinisterMainPicture,
                 altImg: "Prime Minister Charles Michel picture portfolio",
                 bigPicture,
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: PrimeMinisterProject.PrimeMinisterMainFolio01,
                 altImg: "Prime Minister Charles Michel picture portfolio",
-                rectangleportrait
+                rectangleportrait,
+                fullheight,
             },
             {
                 src: PrimeMinisterProject.PrimeMinisterMainFolio02,
                 altImg: "Prime Minister Charles Michel picture portfolio",
                 rectangleportrait,
+                fullheight,
             },
 
 
@@ -656,6 +668,10 @@ export const PhotoRetoucherProjects = [
                 titlerole: "Pictures",
                 descriptionrole:"FredSablon",
             },
+            {
+                titlerole: "Client",
+                descriptionrole:"www.mannes.be",
+            },
         ],
         headerImage: MercoProject.MercoDeco,
         images: [
@@ -664,22 +680,26 @@ export const PhotoRetoucherProjects = [
                 altImg: "Mercedes Manes picture portfolio",
                 bigPicture,
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: MercoProject.MercoBA,
                 altImg: "Mercedes Manes picture portfolio",
                 bigPicture,
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: MercoProject.MercoFolio01,
                 altImg: "Mercedes Manes picture portfolio",
                 rectangleportrait,
+                fullheight,
             },
             {
                 src: MercoProject.MercoFolio02,
                 altImg: "Mercedes Manes picture portfolio",
                 rectangleportrait,
+                fullheight,
             },
 
         ]
@@ -699,6 +719,10 @@ export const PhotoRetoucherProjects = [
                 titlerole: "Pictures",
                 descriptionrole:"FredSablon",
             },
+            {
+                titlerole: "Client",
+                descriptionrole:"www.almahamarrakech.fr",
+            },
         ],
         headerImage: AlmahaProject.AlmahaDeco,
         images: [
@@ -706,50 +730,60 @@ export const PhotoRetoucherProjects = [
                 src: AlmahaProject.AlmahaFolio02,
                 altImg: "Almaha Marrakech Hotel picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: AlmahaProject.AlmahaFolio03,
                 altImg: "Almaha Marrakech Hotel picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: AlmahaProject.AlmahaFolio04,
                 altImg: "Almaha Marrakech Hotel picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: AlmahaProject.AlmahaFolio05,
                 altImg: "Almaha Marrakech Hotel picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: AlmahaProject.AlmahaFolio06,
                 altImg: "Almaha Marrakech Hotel picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: AlmahaProject.AlmahaFolio07,
                 altImg: "Almaha Marrakech Hotel picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: AlmahaProject.AlmahaFolio08,
                 altImg: "Almaha Marrakech Hotel picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: AlmahaProject.AlmahaFolio09,
                 altImg: "Almaha Marrakech Hotel picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },            {
                 src: AlmahaProject.AlmahaFolio10,
                 altImg: "Almaha Marrakech Hotel picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: AlmahaProject.AlmahaFolio01,
                 altImg: "Almaha Marrakech Hotel picture portfolio",
                 rectangleportrait,
+                fullheight,
             },
 
         ]
@@ -763,11 +797,15 @@ export const PhotoRetoucherProjects = [
         roles: [
             {
                 titlerole: "Role",
-                descriptionrole:"Post-production",
+                descriptionrole:"Photograph & Post-production",
             },
             {
                 titlerole: "Pictures",
-                descriptionrole:"FredSablon",
+                descriptionrole:"Jacot Sylvain",
+            },
+            {
+                titlerole: "Client",
+                descriptionrole:"www.whatthefun.be",
             },
         ],
         headerImage: WTFPorject.WTFDeco,
@@ -777,22 +815,26 @@ export const PhotoRetoucherProjects = [
                 altImg: "What the fun picture portfolio",
                 bigPicture,
                 rectangleportrait,
+                fullheight,
             },
             {
                 src: WTFPorject.WTFFolio02,
                 altImg: "What the fun picture portfolio",
                 bigPicture,
                 carre,
+                fullheight,
             },
             {
                 src: WTFPorject.WTFFolio03,
                 altImg: "What the fun picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: WTFPorject.WTFFolio04,
                 altImg: "What the fun picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: WTFPorject.WTFFolio05,
@@ -803,11 +845,13 @@ export const PhotoRetoucherProjects = [
                 src: WTFPorject.WTFFolio06,
                 altImg: "What the fun picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: WTFPorject.WTFFolio07,
                 altImg: "What the fun picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: WTFPorject.WTFFolio08,
@@ -818,21 +862,25 @@ export const PhotoRetoucherProjects = [
                 src: WTFPorject.WTFFolio09,
                 altImg: "What the fun picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: WTFPorject.WTFFolio10,
                 altImg: "What the fun picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: WTFPorject.WTFFolio11,
                 altImg: "What the fun picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
             {
                 src: WTFPorject.WTFFolio12,
                 altImg: "What the fun picture portfolio",
                 rectanglelandscape,
+                fullheight,
             },
 
 
@@ -853,6 +901,10 @@ export const PhotoRetoucherProjects = [
                 titlerole: "Pictures",
                 descriptionrole:"FredSablon",
             },
+            {
+                titlerole: "Client",
+                descriptionrole:"www.thehotel-brussels.be/",
+            },
         ],
         headerImage: TheHotelProject.TheHotelDeco,
         images: [
@@ -861,41 +913,49 @@ export const PhotoRetoucherProjects = [
                 altImg: "The Hotel picture portfolio",
                 bigPicture,
                 carre,
+                fullheight,
             },
             {
                 src: TheHotelProject.TheHotelFolio02,
                 altImg: "The Hotel picture portfolio",
                 videolandscape,
+                fullheight,
             },
             {
                 src: TheHotelProject.TheHotelFolio03,
                 altImg: "The Hotel picture portfolio",
                 videolandscape,
+                fullheight,
             },
             {
                 src: TheHotelProject.TheHotelFolio04,
                 altImg: "The Hotel picture portfolio",
                 videolandscape,
+                fullheight,
             },
             {
                 src: TheHotelProject.TheHotelFolio05,
                 altImg: "The Hotel picture portfolio",
                 videolandscape,
+                fullheight,
             },
             {
                 src: TheHotelProject.TheHotelFolio06,
                 altImg: "The Hotel picture portfolio",
                 videolandscape,
+                fullheight,
             },
             {
                 src: TheHotelProject.TheHotelFolio07,
                 altImg: "The Hotel picture portfolio",
                 videolandscape,
+                fullheight,
             },
             {
                 src: TheHotelProject.TheHotelFolio08,
                 altImg: "The Hotel picture portfolio",
                 videolandscape,
+                fullheight,
             }
 
         ]

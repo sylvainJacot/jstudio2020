@@ -1,6 +1,7 @@
 import React from "react";
 import styled, {css} from "styled-components";
 import {colorsRoles} from "../../01 Atoms/Colors";
+import {media} from "../../01 Atoms/MediaQueries";
 
 
 const LightBoxPicture = (props) => {
@@ -27,6 +28,10 @@ left: 0;
 background-color: ${colorsRoles.Black}E6;
 z-index: 4;
 overflow: scroll;
+
+${media.desktop`
+overflow: unset;
+`}
 
 & img {
 display: block;

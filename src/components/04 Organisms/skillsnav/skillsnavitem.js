@@ -8,7 +8,6 @@ import {colorsRoles, gradient, backgrounds} from "../../01 Atoms/Colors";
 import Button from "../../02 Molecules/Button";
 
 
-
 export const DisciplineNavItemWrapper = styled.li`
 position: relative;
 display: block;
@@ -25,6 +24,7 @@ content: "";
 position: absolute;
 top:0;
 transform: translate(0,-50%);
+-webkit-transform: translate(0,-50%);
 width: 100%;
 height: 320px;
 ${backgrounds.RadialBg01};
@@ -33,6 +33,9 @@ width: 690px;
 height: 624px;
 right: 50%;
 transform: translate(50%,-50%);
+-webkit-transform: translate(50%,-50%);
+-moz-transform: translate(50%,-50%);
+-o-transform: translate(50%,-50%);
 `}
 }
 &:after {
@@ -54,7 +57,9 @@ margin-top: 32px;
 text-align: right;
 color: ${colorsRoles.White};
 transition: ${transitions.basic2};
-moz-transition: ${transitions.basic2}
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basic2};
 ${media.mobileL `
 margin-top: 40px;
 `}
@@ -87,8 +92,10 @@ right: 0;
 width: 40px;
 height: 2px;
 background-color: ${props => props.colorBrand};
-transition: ${transitions.basic2}
--moz-transition: ${transitions.basic2}
+transition: ${transitions.basic2};
+-webkit-animation: ${transitions.basic2};
+-moz-animation: ${transitions.basic2};
+-o-animation: ${transitions.basic2};
 ${media.tablet`
 bottom: -16px;
 `}
@@ -128,13 +135,24 @@ bottom: 4%;
 right: 50%;
 z-index: 1;
 transform: translate(50%,0);
+-webkit-transform: translate(50%,0);
+-moz-transform: translate(50%,0);
+-o-transform: translate(50%,-50%);
 ${backgrounds.RadialBg02};
 ${media.desktop`
 display: block;
 animation: ${Breathe} 5s linear infinite;
+-webkit-animation: ${Breathe} 5s linear infinite;
+-moz-animation: ${Breathe} 5s linear infinite;
+-o-animation: ${Breathe} 5s linear infinite;
+
 opacity: 1;
-transition: ${transitions.basic1}
--moz-transition: ${transitions.basic1}
+-moz-opacity: 1;
+
+transition: ${transitions.basic1};
+-webkit-transition: ${transitions.basic1};
+-moz-transition: ${transitions.basic1};
+-o-transition: ${transitions.basic1};
 `}
 ${media.desktopL`
 bottom: 2%;
@@ -157,14 +175,28 @@ width: auto;
 float: unset;
 `}
 img {
+display: block;
+display: -webkit-flex;
 position: absolute;
 z-index: 0;
 width: 328px;
 height: auto;
 left: -80px;
 top: 64px;
+bottom: 0;
+right: 0;
 transition: ${transitions.easeOut};
--moz-transition: ${transitions.easeOut};
+-webkit-animation: ${transitions.easeOut};
+-moz-animation: ${transitions.easeOut};
+-o-animation: ${transitions.easeOut};
+
+
+
+@media not all and (min-resolution:.001dpcm) { 
+border : 1px solid red;
+}
+
+
 ${media.tablet`
 width: 400px;
 top: 0;
@@ -175,24 +207,41 @@ left:50%;
 top: unset;
 bottom: -24%;
 transform: translate(-50%,50%);
+-webkit-transform: translate(-50%,50%);
+-moz-transform: translate(-50%,50%);
+-o-transform: translate(-50%,50%);
+
 animation: ${UpDown} 5s linear infinite;
+-webkit-animation: ${UpDown} 5s linear infinite;
+
+
 `}
 ${media.desktopL`
 width: 400px;
 bottom: -32%;
+
 `}
 }
 ////////////////////:hover effects
 &:hover {
     cursor: pointer;
-    transition: ${transitions.basic1}
-    moz-transition: ${transitions.basic1}
+    transition: ${transitions.basic1};
+    -webkit-transition: ${transitions.basic1};
+    -moz-transition:    ${transitions.basic1};
+    -o-transition:      ${transitions.basic1};
+    -ms-transition:     ${transitions.basic1};
+
    img {
-      transition: ${transitions.basic2}
-      moz-transition: ${transitions.basic2}
       ${media.desktop`
         width: 560px;
+        height:auto;
         bottom: -80%;
+        transition: ${transitions.basic1};
+        -webkit-transition: ${transitions.basic1};
+        -moz-transition:    ${transitions.basic1};
+        -o-transition:      ${transitions.basic1};
+        -ms-transition:     ${transitions.basic1};
+
       `}
     }
     ${DisciplineNavItemText} > p {
@@ -201,21 +250,30 @@ bottom: -32%;
     ${ImgShadow} {
     display: none;
     ${backgrounds.RadialBg02Transparent};
-    transition: ${transitions.basic1}
-    moz-transition: ${transitions.basic1}
+        transition: ${transitions.basic1};
+        -webkit-transition: ${transitions.basic1};
+        -moz-transition:    ${transitions.basic1};
+        -o-transition:      ${transitions.basic1};
+        -ms-transition:     ${transitions.basic1};
     }
     ${DisciplineNavItemText} {
         & > h1:after {
         width: 80px;
-        transition: ${transitions.basic2}
-        moz-transition: ${transitions.basic2}
+        transition: ${transitions.basic2};
+        -webkit-transition: ${transitions.basic2};
+        -moz-transition:    ${transitions.basic2};
+        -o-transition:      ${transitions.basic2};
+        -ms-transition:     ${transitions.basic2};
         }
         ${media.desktop`
         &  a, span {
         visibility: visible;
         padding: 8px 24px 8px 16px;
         transition: ${transitions.basic1};
-        moz-transition: ${transitions.basic1}
+        -webkit-transition: ${transitions.basic1};
+        -moz-transition:    ${transitions.basic1};
+        -o-transition:      ${transitions.basic1};
+        -ms-transition:     ${transitions.basic1};
       `}
         }
     }
@@ -235,6 +293,7 @@ const Skillsnavitem = (props) => {
     return (
         <>
             <DisciplineNavItemWrapper bottomGradient={props.bottomGradient}>
+
                 <StyledLink to={props.pathname}>
 
                     <DisciplineNavItemText colorBrand={props.colorBrand}>
@@ -252,6 +311,7 @@ const Skillsnavitem = (props) => {
                     <BrandBackground colorBrand={props.colorBrand}/>
 
                 </StyledLink>
+
 
             </DisciplineNavItemWrapper>
 
