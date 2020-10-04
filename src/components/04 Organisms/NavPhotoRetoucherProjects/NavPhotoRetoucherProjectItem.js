@@ -58,7 +58,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 320px;
-height: 320px;
+height: auto;
 margin: 40px;
 &:hover {
   ${media.desktop`
