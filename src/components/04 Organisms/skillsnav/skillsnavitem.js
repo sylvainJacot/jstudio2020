@@ -183,7 +183,8 @@ width: 328px;
 height: auto;
 left: -80px;
 top: 64px;
-bottom: unset;
+bottom: 0;
+right: 0;
 transition: ${transitions.easeOut};
 -webkit-animation: ${transitions.easeOut};
 -moz-animation: ${transitions.easeOut};
@@ -192,12 +193,7 @@ transition: ${transitions.easeOut};
 
 
 @media not all and (min-resolution:.001dpcm) { 
-
-border: 1px solid red;
-${media.desktop`
-border: 1px solid blue;
-
-`}
+border : 1px solid red;
 }
 
 
