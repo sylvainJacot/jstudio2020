@@ -4,6 +4,7 @@ import {media} from "../../01 Atoms/MediaQueries";
 import {colorsRoles, backgrounds, gradient} from "../../01 Atoms/Colors";
 import {transitions} from "../../01 Atoms/Animations";
 import {ClientsUXUI, ClientsDeveloper, ClientsRetoucher} from "../../01 Atoms/Clients";
+import {fonts} from "../../01 Atoms/globalStyle";
 
 export const HeaderWrapper = styled.header`
 position: relative;
@@ -110,7 +111,7 @@ margin-left: 120px;
 `}
  h1 {
 position: relative;
-font-family: PlayfairDisplay-Regular_Black;
+${fonts.PlayFairDisplay};
 font-size: 4rem;
 line-height: 48px;
 color: ${colorsRoles.White};

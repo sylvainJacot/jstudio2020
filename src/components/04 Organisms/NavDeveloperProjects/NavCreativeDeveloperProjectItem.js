@@ -5,6 +5,7 @@ import Button from "../../02 Molecules/Button";
 import {media} from "../../01 Atoms/MediaQueries";
 import {transitions} from "../../01 Atoms/Animations";
 import ResponsiveImage from "../../01 Atoms/ResponsiveImage";
+import {fonts} from "../../01 Atoms/globalStyle";
 
 
 export const Box = styled.div`
@@ -59,7 +60,7 @@ margin-top: 0px;
     }
     
     & h3 {
-    font-family: PlayfairDisplay-Regular_Black;
+    ${fonts.PlayFairDisplay};
     font-size: 6rem;
     line-height: 48px;
     color: ${props => props.TextColor};

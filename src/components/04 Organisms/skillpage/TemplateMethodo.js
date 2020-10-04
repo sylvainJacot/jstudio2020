@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {media} from "../../01 Atoms/MediaQueries";
 import {colorsRoles} from "../../01 Atoms/Colors";
 import MethodoImage from "../../02 Molecules/methodoImage";
+import {fonts} from "../../01 Atoms/globalStyle";
 import {MainMethodoUXUI, MainMethodoDeveloper, MainMethodoRetoucher} from "../../01 Atoms/Data";
 
 export const TemplateMethodoWrapper = styled.section`
@@ -19,7 +20,7 @@ padding: 80px 0 120px 0;
 
  h1 {
 position: relative;
-font-family: PlayfairDisplay-Regular_Black;
+${fonts.PlayFairDisplay};
 font-size: 4rem;
 line-height: 48px;
 color: ${colorsRoles.DarkGrey};
