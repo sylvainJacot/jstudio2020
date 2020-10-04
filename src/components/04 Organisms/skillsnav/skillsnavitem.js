@@ -8,7 +8,6 @@ import {colorsRoles, gradient, backgrounds} from "../../01 Atoms/Colors";
 import Button from "../../02 Molecules/Button";
 
 
-
 export const DisciplineNavItemWrapper = styled.li`
 position: relative;
 display: block;
@@ -176,16 +175,32 @@ width: auto;
 float: unset;
 `}
 img {
+display: block;
+display: -webkit-flex;
 position: absolute;
 z-index: 0;
 width: 328px;
 height: auto;
 left: -80px;
 top: 64px;
+bottom: unset;
 transition: ${transitions.easeOut};
 -webkit-animation: ${transitions.easeOut};
 -moz-animation: ${transitions.easeOut};
 -o-animation: ${transitions.easeOut};
+
+
+
+@media not all and (min-resolution:.001dpcm) { 
+
+border: 1px solid red;
+${media.desktop`
+border: 1px solid blue;
+
+`}
+}
+
+
 ${media.tablet`
 width: 400px;
 top: 0;
@@ -202,10 +217,13 @@ transform: translate(-50%,50%);
 
 animation: ${UpDown} 5s linear infinite;
 -webkit-animation: ${UpDown} 5s linear infinite;
+
+
 `}
 ${media.desktopL`
 width: 400px;
 bottom: -32%;
+
 `}
 }
 ////////////////////:hover effects
@@ -218,14 +236,15 @@ bottom: -32%;
     -ms-transition:     ${transitions.basic1};
 
    img {
-      transition: ${transitions.basic1};
-    -webkit-transition: ${transitions.basic1};
-    -moz-transition:    ${transitions.basic1};
-    -o-transition:      ${transitions.basic1};
-    -ms-transition:     ${transitions.basic1};
       ${media.desktop`
         width: 560px;
+        height:auto;
         bottom: -80%;
+        transition: ${transitions.basic1};
+        -webkit-transition: ${transitions.basic1};
+        -moz-transition:    ${transitions.basic1};
+        -o-transition:      ${transitions.basic1};
+        -ms-transition:     ${transitions.basic1};
 
       `}
     }
@@ -278,6 +297,7 @@ const Skillsnavitem = (props) => {
     return (
         <>
             <DisciplineNavItemWrapper bottomGradient={props.bottomGradient}>
+
                 <StyledLink to={props.pathname}>
 
                     <DisciplineNavItemText colorBrand={props.colorBrand}>
@@ -295,6 +315,7 @@ const Skillsnavitem = (props) => {
                     <BrandBackground colorBrand={props.colorBrand}/>
 
                 </StyledLink>
+
 
             </DisciplineNavItemWrapper>
 

@@ -14,7 +14,7 @@ filter: ${props => props.value ? "blur(4px)" : "unset"};
 -moz-filter:${props => props.value ? "blur(4px)" : "unset"};
 -o-filter: ${props => props.value ? "blur(4px)" : "unset"};
 -ms-filter: ${props => props.value ? "blur(4px)" : "unset"};
--
+
 ${media.desktop`
 margin-top: unset;
 margin-right: 80px;
