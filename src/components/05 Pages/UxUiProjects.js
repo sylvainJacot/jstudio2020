@@ -8,6 +8,7 @@ import {media} from "../01 Atoms/MediaQueries";
 import {SkillsAnimals} from "../01 Atoms/Images-UXUI";
 import TemplateMethodo from "../04 Organisms/skillpage/TemplateMethodo";
 import NavUxUIProjects from "../04 Organisms/NavUxUIProjects/NavUxUIProjects";
+import BackButton from "../02 Molecules/BackButton";
 
 
 export const Box = styled.div`
@@ -23,6 +24,7 @@ const UxUiProjects = () => {
     return <>
 
         <Box>
+            <BackButton/>
             <Skillheader
                 mainTitle={"UX/UI Designer"}
                 mainColor={colorsRoles.Brand01}

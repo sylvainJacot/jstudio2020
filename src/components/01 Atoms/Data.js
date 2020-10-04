@@ -22,9 +22,17 @@ import {
     Git,
     Bootsrap,
     CSS3,
-    Javascript, CoffeeBreak, Streching
+    Javascript, CoffeeBreak, Streching, LightRoom, Wacom, GraphicTablet, CrossBrowsersTesting
 } from "./Icons-Methodo";
-import {AlmahaProject, EatBxlProject, MercoProject, PrimeMinisterProject, WTFPorject} from "./Images-Retoucher";
+import {
+    AlmahaProject,
+    EatBxlProject,
+    MercoProject,
+    PrimeMinisterProject,
+    TheHotelProject,
+    WTFPorject
+} from "./Images-Retoucher";
+import CrossBrowsersTestingLogo from "../../media/icons/methodology/CrossBrowser.svg";
 
 
 export const pathuiux = "/ux-ui-designer";
@@ -79,7 +87,7 @@ export const Skills =  [
     {
         titleNav: CreativeDev,
         mainTitle: "Creative Developer",
-        quote: "I understand that...",
+        quote: '"I understand the scope, requirements, and technical restraints of the project I am currently working on."',
         altMainImg: "Fox with human body",
         srcMainImg: SkillsAnimals.Fox,
         mainColor: colorsRoles.Brand02,
@@ -90,7 +98,7 @@ export const Skills =  [
     {
         titleNav: PhotoRetoucher,
         mainTitle: "Photo Retoucher",
-        quote: "I understand that ...",
+        quote: "I understand that quality is not just about the retouching itself but also about the added value of service that you provide",
         altMainImg: "Horse with human body",
         srcMainImg: SkillsAnimals.Horse,
         mainColor: colorsRoles.Brand03,
@@ -113,20 +121,17 @@ export const MainMethodoUXUI = [
 ]
 export const MainMethodoDeveloper = [
     Streching,
-    AtomicDesign,
     ReactJs,
     StyledComponents,
     ResponsiveDesign,
+    CrossBrowsersTesting,
     Git,
     CoffeeBreak,
 ]
 export const MainMethodoRetoucher = [
-    AtomicDesign,
-    ReactJs,
-    StyledComponents,
-    ResponsiveDesign,
-    Git,
-
+    LightRoom,
+    Photoshop,
+    GraphicTablet,
 ]
 
 
@@ -817,6 +822,68 @@ export const PhotoRetoucherProjects = [
                 rectanglelandscape,
             },
 
+
+        ]
+    },
+    {
+        title: "The Hotel",
+        skill: "Photo Retoucher",
+        slug: "thehotel",
+        description: "Hotel in the city center of Brussels",
+        thumbnailproject : TheHotelProject.TheHotelThumbnail,
+        roles: [
+            {
+                titlerole: "Role",
+                descriptionrole:"Post-production",
+            },
+            {
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
+            },
+        ],
+        headerImage: TheHotelProject.TheHotelDeco,
+        images: [
+            {
+                src: TheHotelProject.TheHotelFolio01,
+                altImg: "The Hotel picture portfolio",
+                bigPicture,
+                carre,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio02,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio03,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio04,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio05,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio06,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio07,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio08,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            }
 
         ]
     },

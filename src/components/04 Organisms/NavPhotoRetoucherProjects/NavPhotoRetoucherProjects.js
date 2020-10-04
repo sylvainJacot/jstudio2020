@@ -4,7 +4,6 @@ import styled from "styled-components";
 import {colorsRoles} from "../../01 Atoms/Colors";
 import {PhotoRetoucherProjects} from "../../01 Atoms/Data";
 import {useRouteMatch} from "react-router-dom";
-import NavCreativeDeveloperProjectItem from "../NavDeveloperProjects/NavCreativeDeveloperProjectItem";
 
 
 const NavPhotoRetoucherProjects = () => {
