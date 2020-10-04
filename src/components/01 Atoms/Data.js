@@ -290,7 +290,7 @@ export const UIUXProjects = [
             },
             {
                 srcDesktop: KiaProject.KiaFolio03,
-                srcMobile: KiaProject.KiaFolio013,
+                srcMobile: KiaProject.KiaFolio03,
                 altImg: "Kia project portfolio 3",
                 bgColor: colors.PureWhite,
             },

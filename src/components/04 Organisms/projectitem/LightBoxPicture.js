@@ -1,8 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import styled, {css} from "styled-components";
 import {colorsRoles} from "../../01 Atoms/Colors";
-import {transitions} from "../../01 Atoms/Animations";
-import {media} from "../../01 Atoms/MediaQueries";
 
 
 const LightBoxPicture = (props) => {
@@ -28,6 +26,7 @@ bottom: 0;
 left: 0;
 background-color: ${colorsRoles.Black}E6;
 z-index: 4;
+overflow: scroll;
 
 & img {
 display: block;

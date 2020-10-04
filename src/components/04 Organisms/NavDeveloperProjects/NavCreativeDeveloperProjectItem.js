@@ -178,8 +178,8 @@ top: 3px;
 width: 50%;
 height: 100%;
 background: linear-gradient(to bottom, transparent, ${colorsRoles.DarkGrey});
-filter: blur(8px);
-opacity: .7;
+filter: blur(3px);
+opacity: .4;
 transition: ${transitions.basic1};
 }
 
