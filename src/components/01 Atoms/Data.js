@@ -33,6 +33,7 @@ import {
     WTFPorject
 } from "./Images-Retoucher";
 import CrossBrowsersTestingLogo from "../../media/icons/methodology/CrossBrowser.svg";
+import PictureComponent from "../04 Organisms/projectitem/PictureComponent";
 
 
 export const pathuiux = "/ux-ui-designer";
@@ -69,6 +70,8 @@ export const carre = "carre : true";
 export const rectanglelandscape = "rectanglelandscape : true";
 export const rectangleportrait = "rectangleportrait : true";
 export const bigPicture = "bigPicture: true";
+export const fullheight = "fullheight:true";
+export const fullwidth = "fullwidth:true";
 
 
 export const Skills =  [
@@ -535,48 +538,58 @@ export const PhotoRetoucherProjects = [
                 altImg: "Eat Brussels Festival picture portfolio",
                 bigPicture,
                 rectanglelandscape,
+                fullwidth,
             },
             {
                 src: EatBxlProject.EatBXLPict02,
                 altImg: "Eat Brussels Festival picture portfolio",
                 rectangleportrait,
+                fullheight,
             },
             {
                 src: EatBxlProject.EatBXLPict03,
                 altImg: "Eat Brussels Festival picture portfolio",
                 rectangleportrait,
+                fullheight
             },
             {
                 src: EatBxlProject.EatBXLPict04,
                 altImg: "Eat Brussels Festival picture portfolio",
                 rectangleportrait,
+                fullheight
             },
             {
                 src: EatBxlProject.EatBXLPict05,
                 altImg: "Eat Brussels Festival picture portfolio",
                 rectangleportrait,
+                fullheight
             },{
                 src: EatBxlProject.EatBXLPict06,
                 altImg: "Eat Brussels Festival picture portfolio",
                 rectangleportrait,
+                fullheight
             },{
                 src: EatBxlProject.EatBXLPict07,
                 altImg: "Eat Brussels Festival picture portfolio",
                 rectangleportrait,
+                fullheight
             },{
                 src: EatBxlProject.EatBXLPict08,
                 altImg: "Eat Brussels Festival picture portfolio",
                 rectangleportrait,
+                fullheight
             },
             {
                 src: EatBxlProject.EatBXLPict09,
                 altImg: "Eat Brussels Festival picture portfolio",
                 rectangleportrait,
+                fullheight
             },
             {
                 src: EatBxlProject.EatBXLPict10,
                 altImg: "Eat Brussels Festival picture portfolio",
                 rectangleportrait,
+                fullheight
             },
 
 
