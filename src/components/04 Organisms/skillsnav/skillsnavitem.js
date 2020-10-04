@@ -174,53 +174,19 @@ ${media.desktop`
 width: auto;
 float: unset;
 `}
-img {
-display: block;
-display: -webkit-flex;
+
+& img {
 position: absolute;
-z-index: 0;
+z-index: 5;
 width: 328px;
-height: auto;
 left: -80px;
 top: 64px;
-bottom: 0;
-right: 0;
-transition: ${transitions.easeOut};
--webkit-animation: ${transitions.easeOut};
--moz-animation: ${transitions.easeOut};
--o-animation: ${transitions.easeOut};
 
-
-
-@media not all and (min-resolution:.001dpcm) { 
-border : 1px solid red;
+    ${media.tablet`
+    width: 400px;
+    top: 0;
+    `}
 }
-
-
-${media.tablet`
-width: 400px;
-top: 0;
-`}
-${media.desktop`
-width: 360px;
-left:50%;
-top: unset;
-bottom: -24%;
-transform: translate(-50%,50%);
--webkit-transform: translate(-50%,50%);
--moz-transform: translate(-50%,50%);
--o-transform: translate(-50%,50%);
-
-animation: ${UpDown} 5s linear infinite;
--webkit-animation: ${UpDown} 5s linear infinite;
-
-
-`}
-${media.desktopL`
-width: 400px;
-bottom: -32%;
-
-`}
 }
 ////////////////////:hover effects
 &:hover {
@@ -231,19 +197,6 @@ bottom: -32%;
     -o-transition:      ${transitions.basic1};
     -ms-transition:     ${transitions.basic1};
 
-   img {
-      ${media.desktop`
-        width: 560px;
-        height:auto;
-        bottom: -80%;
-        transition: ${transitions.basic1};
-        -webkit-transition: ${transitions.basic1};
-        -moz-transition:    ${transitions.basic1};
-        -o-transition:      ${transitions.basic1};
-        -ms-transition:     ${transitions.basic1};
-
-      `}
-    }
     ${DisciplineNavItemText} > p {
     display: block;
     }
