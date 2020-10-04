@@ -9,21 +9,12 @@ export const transitions = {
 export const UpDown = keyframes`
   0% {
   transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -o-transform:translate(-50%,-50%);
   }
   50% {
-  transform: translate(-50%,-48%);
-  -webkit-transform: translate(-50%,-48%);
-  -moz-transform: translate(-50%,-48%);
-  -o-transform:translate(-50%,-48%);
+  transform: translate(-50%,-48%); 
   }
   100% {
   transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -o-transform:translate(-50%,-50%);
   }
 `;
 
@@ -33,4 +24,8 @@ export const Breathe = keyframes`
   100% {width: 60%; opacity: 70%; -moz-opacity: 70%;}
 `;
 
-
+export const updownsec = " " +
+    "@-webkit-keyframes downup" +
+    "{ 0% {\n  transform: translate(-50%,-50%);\n  -webkit-transform: translate(-50%,-50%);\n  -moz-transform: translate(-50%,-50%);\n  -o-transform:translate(-50%,-50%);\n  }\n  " +
+    "50% {\n  transform: translate(-50%,-48%);\n  -webkit-transform: translate(-50%,-48%);\n  -moz-transform: translate(-50%,-48%);\n  -o-transform:translate(-50%,-48%);\n  }\n  " +
+    "100% {\n  transform: translate(-50%,-50%);\n  -webkit-transform: translate(-50%,-50%);\n  -moz-transform: translate(-50%,-50%);\n  -o-transform:translate(-50%,-50%);\n  }}";
