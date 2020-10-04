@@ -5,6 +5,7 @@ import {colorsRoles} from "../../01 Atoms/Colors";
 import {transitions} from "../../01 Atoms/Animations";
 import {Link} from "react-router-dom";
 import {media} from "../../01 Atoms/MediaQueries";
+import {fonts} from "../../01 Atoms/globalStyle";
 
 const NavPhotoRetoucherProjectItem = (props) => {
     return <>
@@ -39,7 +40,7 @@ border-radius: 0px 0px 4px 4px;
 z-index: 0;
 transition: ${transitions.basic1};
 & h3 {
-    font-family: PlayfairDisplay-Regular_Black;
+    ${fonts.PlayFairDisplay};
     font-size: 2rem;
     line-height: 1.5;
     color: ${colorsRoles.DarkGrey};
@@ -57,7 +58,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 320px;
-height: 320px;
+height: auto;
 margin: 40px;
 &:hover {
   ${media.desktop`

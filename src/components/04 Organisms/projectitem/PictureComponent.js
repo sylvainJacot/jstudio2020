@@ -33,6 +33,8 @@ const PictureComponent = (props) => {
                 isactive={active}
                 src={props.src}
                 alt={props.alt}
+                fullheight={props.fullheight}
+                fullwidth={props.fullwidth}
             />
         </Wrapper>
 

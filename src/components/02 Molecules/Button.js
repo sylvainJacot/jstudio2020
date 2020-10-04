@@ -66,7 +66,7 @@ ${(props) => {
 `;
 export const StyledSpan = styled.span`
 position: relative;
-display: inline-block;
+display: block;
 width: fit-content;
 height: fit-content;
 padding: 16px;
@@ -75,7 +75,8 @@ margin-bottom: 16px;
 border-radius: 8px;
 color: ${colorsRoles.White};
 background-color: transparent;
-border: 1px solid ${colorsRoles.White};  
+border: 1px solid ${colorsRoles.White}; 
+z-index: 1; 
 & div > svg {
 fill: ${colorsRoles.White};
 }  

@@ -38,7 +38,7 @@ transform: rotate(45deg);
 `;
 export const Box = styled.div`
 position: relative;
-margin: 8px;
+margin: 24px 16px;
 
 ${media.desktop`
 margin: 16px;

@@ -7,6 +7,7 @@ import {colorsRoles} from "../../01 Atoms/Colors";
 import ResponsiveImage from "../../01 Atoms/ResponsiveImage";
 import Parallax from "react-rellax";
 import Button from "../../02 Molecules/Button";
+import {fonts} from "../../01 Atoms/globalStyle";
 
 
 
@@ -61,7 +62,7 @@ width: 50%;
     }
     
     & h3 {
-    font-family: PlayfairDisplay-Regular_Black;
+    ${fonts.PlayFairDisplay};
     font-size: 6rem;
     line-height: 48px;
     color: ${props => props.TextColor};

@@ -1,15 +1,12 @@
-import React, {useState} from "react";
-import styled from "styled-components";
-import TestImage from "../../../media/img/Projects/03_Photo Retoucher/EATBRUSSELS2019/151_EATBXL_FOOD_QueueBoeuf.png";
+import React from "react";
+import styled, {css} from "styled-components";
 import {colorsRoles} from "../../01 Atoms/Colors";
-import {transitions} from "../../01 Atoms/Animations";
-import {media} from "../../01 Atoms/MediaQueries";
 
 
 const LightBoxPicture = (props) => {
 
     return <>
-        <Wrapper onClick={props.onClick} isactive={props.isactive}>
+        <Wrapper onClick={props.onClick} isactive={props.isactive} fullheight={props.fullheight} fullwidth={props.fullwidth}>
             <img src={props.src} alt={props.alt}/>
         </Wrapper>
 
@@ -29,17 +26,26 @@ bottom: 0;
 left: 0;
 background-color: ${colorsRoles.Black}E6;
 z-index: 4;
+overflow: scroll;
 
 & img {
 display: block;
 margin: auto;
 
+${(props) => {
+    return (
+        props.fullheight && css`
+        height: 100%;
+        width: auto;
+        ` );
+}}
 
-${media.tablet`
-width: auto;
-height: 100%;
-`}
-
-}
+${(props) => {
+    return (
+        props.fullwidth && css`
+        width: 100%;
+        height: auto;
+        ` );
+}}
 
 `;

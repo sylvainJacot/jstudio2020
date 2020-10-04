@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {media} from "../../01 Atoms/MediaQueries";
 import {colorsRoles} from "../../01 Atoms/Colors";
 import ShortDescription from "./shortdescription";
+import {fonts} from "../../01 Atoms/globalStyle";
 
 
 export const Box = styled.div`
@@ -16,7 +17,7 @@ padding: ${props => props.photoRetoucher? "96px 0 96px 0" : "80px 0 24px 0"};
 
 & h1 {
 position: relative;
-font-family: PlayfairDisplay-Regular_Black;
+${fonts.PlayFairDisplay};
 font-size: 4rem;
 line-height: 32px;
 color: ${colorsRoles.DarkGrey};

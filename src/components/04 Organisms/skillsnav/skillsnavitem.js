@@ -143,8 +143,9 @@ bottom: 2%;
 export const StyledLink = styled(NavLink)` 
 display: block;
 padding: 0 16px;
-width: 64%;
+width: 50%;
 float: right;
+z-index: 1;
 ${media.mobileL`
 padding: 0 32px;
 `}
