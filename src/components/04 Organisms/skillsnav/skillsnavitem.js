@@ -158,6 +158,7 @@ float: unset;
 
 & img {
     position: absolute;
+    z-index: 5;
     width: 328px;
     left: -80px;
     top: 64px;
@@ -172,6 +173,10 @@ float: unset;
         bottom: -24%;
         animation: ${UpDown} 5s linear infinite;
         top: unset;
+        @media not all and (min-resolution:.001dpcm) { 
+            transform: translate(-50%,-50%);
+            animation: none;
+      }
     `}
 }
     
@@ -186,11 +191,6 @@ float: unset;
       width: 560px; 
       bottom: -80%; 
       transition: ${transitions.basic1};
-          @media not all and (min-resolution:.001dpcm) 
-              { 
-              left: 28%;
-              bottom: -59%;
-              }
     `}
     
     }
