@@ -7,6 +7,8 @@ import TelenetLogo from "../../media/icons/clients/Telenet.svg";
 import ClavieLogo from "../../media/icons/clients/Clavie.png";
 import SoSmartLogo from "../../media/icons/clients/SoSmart.png";
 import ParentrepriseLogo from "../../media/icons/clients/Parentreprise.svg";
+import FredSablonLogo from "../../media/icons/clients/FredSablon.svg";
+import ClioGolbrennerLogo from "../../media/icons/clients/ClioGoldbrenner.png";
 
 export const ClientsUXUI = [
     {altimg: "Samsung client", src: SamsungLogo},
@@ -27,7 +29,7 @@ export const ClientsDeveloper = [
 ]
 
 export const ClientsRetoucher = [
-    {altimg: "client", src: SamsungLogo},
-    {altimg: "client", src: SamsungLogo},
+    {altimg: "Fred Sablon Photographer", src: FredSablonLogo},
+    {altimg: "Clio Golbrenner", src: ClioGolbrennerLogo},
 ]
 

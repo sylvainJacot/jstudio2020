@@ -22,9 +22,18 @@ import {
     Git,
     Bootsrap,
     CSS3,
-    Javascript, CoffeeBreak, Streching
+    Javascript, CoffeeBreak, Streching, LightRoom, Wacom, GraphicTablet, CrossBrowsersTesting
 } from "./Icons-Methodo";
-import {EatBxlProject} from "./Images-Retoucher";
+import {
+    AlmahaProject,
+    EatBxlProject,
+    MercoProject,
+    PrimeMinisterProject,
+    TheHotelProject,
+    WTFPorject
+} from "./Images-Retoucher";
+import CrossBrowsersTestingLogo from "../../media/icons/methodology/CrossBrowser.svg";
+
 
 export const pathuiux = "/ux-ui-designer";
 export const pathdev = "/creative-developer";
@@ -54,6 +63,13 @@ const PhotoRetoucher = (
     </>
 );
 
+export const videoportrait = "videoportrait : true";
+export const videolandscape = "videolandscape : true";
+export const carre = "carre : true";
+export const rectanglelandscape = "rectanglelandscape : true";
+export const rectangleportrait = "rectangleportrait : true";
+export const bigPicture = "bigPicture: true";
+
 
 export const Skills =  [
     {
@@ -71,7 +87,7 @@ export const Skills =  [
     {
         titleNav: CreativeDev,
         mainTitle: "Creative Developer",
-        quote: "Lorem ipsum UX/UI Designer ezifz iugef zieg fzieg",
+        quote: '"I understand the scope, requirements, and technical restraints of the project I am currently working on."',
         altMainImg: "Fox with human body",
         srcMainImg: SkillsAnimals.Fox,
         mainColor: colorsRoles.Brand02,
@@ -82,7 +98,7 @@ export const Skills =  [
     {
         titleNav: PhotoRetoucher,
         mainTitle: "Photo Retoucher",
-        quote: "Lorem ipsum UX/UI Designer ezifz iugef zieg fzieg",
+        quote: "I understand that quality is not just about the retouching itself but also about the added value of service that you provide",
         altMainImg: "Horse with human body",
         srcMainImg: SkillsAnimals.Horse,
         mainColor: colorsRoles.Brand03,
@@ -105,20 +121,17 @@ export const MainMethodoUXUI = [
 ]
 export const MainMethodoDeveloper = [
     Streching,
-    AtomicDesign,
     ReactJs,
     StyledComponents,
     ResponsiveDesign,
+    CrossBrowsersTesting,
     Git,
     CoffeeBreak,
 ]
 export const MainMethodoRetoucher = [
-    AtomicDesign,
-    ReactJs,
-    StyledComponents,
-    ResponsiveDesign,
-    Git,
-
+    LightRoom,
+    Photoshop,
+    GraphicTablet,
 ]
 
 
@@ -503,61 +516,67 @@ export const PhotoRetoucherProjects = [
         title: "Eat Brussels Festival",
         skill: "Photo Retoucher",
         slug: "EatBrusselsFestival",
+        description: "The Eat Brussels Festival promote great names in Brussels gastronomy",
+        thumbnailproject : EatBxlProject.EatBXLBThumbnail,
         roles: [
             {
-                titlerole: "Team",
-                descriptionrole:"6 people",
-            },
-            {
                 titlerole: "Role",
-                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+                descriptionrole:"Post-production",
             },
             {
-                titlerole: "Time",
-                descriptionrole:"Around 4 mounths",
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
             },
         ],
-        headerImage: EatBxlProject.EatBXLHeader,
-        decorativeimage: EatBxlProject.EatBXlDeco,
-        maincolor: projectColors.Clavie,
-        thumbnailproject : EatBxlProject.EatBXLMainPicture,
+        headerImage: EatBxlProject.EatBXlDeco,
         images: [
             {
-                src: EatBxlProject.EatBXLPict01,
+                src: EatBxlProject.EatBXLBeforeAfter,
                 altImg: "Eat Brussels Festival picture portfolio",
+                bigPicture,
+                rectanglelandscape,
             },
             {
                 src: EatBxlProject.EatBXLPict02,
                 altImg: "Eat Brussels Festival picture portfolio",
+                rectangleportrait,
             },
             {
                 src: EatBxlProject.EatBXLPict03,
                 altImg: "Eat Brussels Festival picture portfolio",
+                rectangleportrait,
             },
             {
                 src: EatBxlProject.EatBXLPict04,
                 altImg: "Eat Brussels Festival picture portfolio",
+                rectangleportrait,
             },
             {
                 src: EatBxlProject.EatBXLPict05,
                 altImg: "Eat Brussels Festival picture portfolio",
+                rectangleportrait,
             },{
                 src: EatBxlProject.EatBXLPict06,
                 altImg: "Eat Brussels Festival picture portfolio",
+                rectangleportrait,
             },{
                 src: EatBxlProject.EatBXLPict07,
                 altImg: "Eat Brussels Festival picture portfolio",
+                rectangleportrait,
             },{
                 src: EatBxlProject.EatBXLPict08,
                 altImg: "Eat Brussels Festival picture portfolio",
+                rectangleportrait,
             },
             {
                 src: EatBxlProject.EatBXLPict09,
                 altImg: "Eat Brussels Festival picture portfolio",
+                rectangleportrait,
             },
             {
                 src: EatBxlProject.EatBXLPict10,
                 altImg: "Eat Brussels Festival picture portfolio",
+                rectangleportrait,
             },
 
 
@@ -566,73 +585,311 @@ export const PhotoRetoucherProjects = [
         ]
     },
     {
-        title: "Eat Brussels Festival 2",
+        title: "Belgian Prime Minister",
         skill: "Photo Retoucher",
-        slug: "EatBrusselsFestival2",
+        slug: "PrimeMinister",
+        description: "Charles Michel is a Belgian politician who was Prime Minister of Belgium between 2014-2019",
+        thumbnailproject : PrimeMinisterProject.PrimeMinisterMainThumbnail,
         roles: [
             {
-                titlerole: "Team",
-                descriptionrole:"6 people",
-            },
-            {
                 titlerole: "Role",
-                descriptionrole:"Design the entire platform based on the wireframes provided. Implement atomic components (html/css)",
+                descriptionrole:"Post-production",
             },
             {
-                titlerole: "Time",
-                descriptionrole:"Around 4 mounths",
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
             },
         ],
-        headerImage: EatBxlProject.EatBXLHeader,
-        decorativeimage: EatBxlProject.EatBXlDeco,
-        maincolor: projectColors.Clavie,
-        thumbnailproject : EatBxlProject.EatBXLMainPicture,
+        headerImage: PrimeMinisterProject.PrimeMinisterMainDeco,
         images: [
             {
-                src: EatBxlProject.EatBXLPict01,
-                altImg: "Eat Brussels Festival picture portfolio",
+                src: PrimeMinisterProject.PrimeMinisterMainBeforeAfter,
+                altImg: "Prime Minister Charles Michel picture portfolio",
+                bigPicture,
+                rectanglelandscape,
             },
             {
-                src: EatBxlProject.EatBXLPict02,
-                altImg: "Eat Brussels Festival picture portfolio",
+                src: PrimeMinisterProject.PrimeMinisterMainPicture,
+                altImg: "Prime Minister Charles Michel picture portfolio",
+                bigPicture,
+                rectanglelandscape,
             },
             {
-                src: EatBxlProject.EatBXLPict03,
-                altImg: "Eat Brussels Festival picture portfolio",
+                src: PrimeMinisterProject.PrimeMinisterMainFolio01,
+                altImg: "Prime Minister Charles Michel picture portfolio",
+                rectangleportrait
             },
             {
-                src: EatBxlProject.EatBXLPict04,
-                altImg: "Eat Brussels Festival picture portfolio",
+                src: PrimeMinisterProject.PrimeMinisterMainFolio02,
+                altImg: "Prime Minister Charles Michel picture portfolio",
+                rectangleportrait,
             },
-            {
-                src: EatBxlProject.EatBXLPict05,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },{
-                src: EatBxlProject.EatBXLPict06,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },{
-                src: EatBxlProject.EatBXLPict07,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },{
-                src: EatBxlProject.EatBXLPict08,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },
-            {
-                src: EatBxlProject.EatBXLPict09,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },
-            {
-                src: EatBxlProject.EatBXLPict10,
-                altImg: "Eat Brussels Festival picture portfolio",
-            },
-
-
 
 
         ]
     },
+    {
+        title: "Mercedes",
+        skill: "Photo Retoucher",
+        slug: "Mercedes",
+        description: "Mercedes car dealership",
+        thumbnailproject : MercoProject.MercoThumbnail,
+        roles: [
+            {
+                titlerole: "Role",
+                descriptionrole:"Post-production",
+            },
+            {
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
+            },
+        ],
+        headerImage: MercoProject.MercoDeco,
+        images: [
+            {
+                src: MercoProject.MercoMain,
+                altImg: "Mercedes Manes picture portfolio",
+                bigPicture,
+                rectanglelandscape,
+            },
+            {
+                src: MercoProject.MercoBA,
+                altImg: "Mercedes Manes picture portfolio",
+                bigPicture,
+                rectanglelandscape,
+            },
+            {
+                src: MercoProject.MercoFolio01,
+                altImg: "Mercedes Manes picture portfolio",
+                rectangleportrait,
+            },
+            {
+                src: MercoProject.MercoFolio02,
+                altImg: "Mercedes Manes picture portfolio",
+                rectangleportrait,
+            },
 
+        ]
+    },
+    {
+        title: "Almaha Marrakech",
+        skill: "Photo Retoucher",
+        slug: "Almaha Marrakech hotel in Morocco",
+        description: "Almaha Marrakech",
+        thumbnailproject : AlmahaProject.AlmahaThumbnail,
+        roles: [
+            {
+                titlerole: "Role",
+                descriptionrole:"Post-production",
+            },
+            {
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
+            },
+        ],
+        headerImage: AlmahaProject.AlmahaDeco,
+        images: [
+            {
+                src: AlmahaProject.AlmahaFolio02,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio03,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio04,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio05,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio06,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio07,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio08,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio09,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },            {
+                src: AlmahaProject.AlmahaFolio10,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: AlmahaProject.AlmahaFolio01,
+                altImg: "Almaha Marrakech Hotel picture portfolio",
+                rectangleportrait,
+            },
+
+        ]
+    },
+    {
+        title: "What the fun",
+        skill: "Photo Retoucher",
+        slug: "whatthefun",
+        description: "What the Fun, a Stand up comedy club",
+        thumbnailproject : WTFPorject.WTFThumbnail,
+        roles: [
+            {
+                titlerole: "Role",
+                descriptionrole:"Post-production",
+            },
+            {
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
+            },
+        ],
+        headerImage: WTFPorject.WTFDeco,
+        images: [
+            {
+                src: WTFPorject.WTFFolio01,
+                altImg: "What the fun picture portfolio",
+                bigPicture,
+                rectangleportrait,
+            },
+            {
+                src: WTFPorject.WTFFolio02,
+                altImg: "What the fun picture portfolio",
+                bigPicture,
+                carre,
+            },
+            {
+                src: WTFPorject.WTFFolio03,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio04,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio05,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio06,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio07,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio08,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio09,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio10,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio11,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+            {
+                src: WTFPorject.WTFFolio12,
+                altImg: "What the fun picture portfolio",
+                rectanglelandscape,
+            },
+
+
+        ]
+    },
+    {
+        title: "The Hotel",
+        skill: "Photo Retoucher",
+        slug: "thehotel",
+        description: "Hotel in the city center of Brussels",
+        thumbnailproject : TheHotelProject.TheHotelThumbnail,
+        roles: [
+            {
+                titlerole: "Role",
+                descriptionrole:"Post-production",
+            },
+            {
+                titlerole: "Pictures",
+                descriptionrole:"FredSablon",
+            },
+        ],
+        headerImage: TheHotelProject.TheHotelDeco,
+        images: [
+            {
+                src: TheHotelProject.TheHotelFolio01,
+                altImg: "The Hotel picture portfolio",
+                bigPicture,
+                carre,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio02,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio03,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio04,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio05,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio06,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio07,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            },
+            {
+                src: TheHotelProject.TheHotelFolio08,
+                altImg: "The Hotel picture portfolio",
+                videolandscape,
+            }
+
+        ]
+    },
+  
 ]
+
 
 
 

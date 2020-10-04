@@ -11,7 +11,7 @@ background-color: ${colorsRoles.White};
 padding: 32px 0;
 
 ${media.desktop`
-padding: 80px 0 24px 0;
+padding: ${props => props.photoRetoucher? "96px 0 96px 0" : "80px 0 24px 0"};
 `}
 
 & h1 {
@@ -37,8 +37,9 @@ flex-direction: column;
 align-items: center;
 
 ${media.desktop`
-flex-direction: unset;
+flex-direction: row;
 align-items: unset;
+justify-content: center;
 `};
 
 `;
@@ -49,7 +50,7 @@ const ProjectMainTitle = (props) => {
     const roles = props.roles;
 
     return <>
-            <Box>
+            <Box photoRetoucher={props.photoRetoucher}>
                   <h1>{props.title}</h1>
 
                   <ShortDescriptionWrapper>

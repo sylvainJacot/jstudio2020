@@ -3,7 +3,7 @@ export const colors = {
     Red : "#FA2A62",
     Purple : "#5B2AFA",
 
-    Black : "#000",
+    Black : "#000000",
     DarkGrey : "#222222",
     DarkGrey2 : "#7D7D7D",
     LightGrey : "#C5C5C5",

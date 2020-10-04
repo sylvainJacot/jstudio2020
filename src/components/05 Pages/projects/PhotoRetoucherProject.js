@@ -1,15 +1,60 @@
 import React from "react";
 import styled from "styled-components";
 
-import {media, sizes} from "../../01 Atoms/MediaQueries";
-import ProjectHeader from "../../04 Organisms/projectitem/projectheader";
+import {media} from "../../01 Atoms/MediaQueries";
 import ProjectMainTitle from "../../04 Organisms/projectitem/ProjectMainTitle";
-import TemplateMethodo from "../../04 Organisms/skillpage/TemplateMethodo";
-import TemplateImageProject from "../../04 Organisms/projectitem/TemplateImageProject";
 import BackButton from "../../02 Molecules/BackButton";
+import PhotoProjectHeader from "../../04 Organisms/projectitem/PhotoProjectHeader";
+import PictureComponent from "../../04 Organisms/projectitem/PictureComponent";
+
+
+
+const PhotoRetoucherProject = (props) => {
+
+    let pictureComponent = props.pictureItem;
+
+    return <>
+        <Box>
+            <BackButton/>
+            <PhotoProjectHeader headerdeco={props.headerdeco}/>
+            <ProjectMainTitle
+                title={props.title}
+                titlerole={props.titlerole}
+                description={props.descriptionrole}
+                roles={props.roles}
+                photoRetoucher
+            />
+
+            <GalleryWrapper>
+            {
+                pictureComponent.map((item,index) => (
+                    <PictureComponent
+                        key={index}
+                        video={item.video}
+                        videoportrait={item.videoportrait}
+                        videolandscape={item.videolandscape}
+                        landscape={item.landscape}
+                        carre={item.carre}
+                        rectanglelandscape={item.rectanglelandscape}
+                        rectangleportrait={item.rectangleportrait}
+                        src={item.src}
+                        alt={item.altImg}
+                        bigPicture={item.bigPicture}
+                    />
+                ))
+            }
+            </GalleryWrapper>
+
+
+        </Box>
+    </>
+
+};
+
+export default PhotoRetoucherProject;
 
 export const Box = styled.div`
-
+height: 100%;
 margin-top: 64px;
 
 ${media.desktop`
@@ -34,47 +79,12 @@ height: 400px;
 
 `;
 
-const PhotoRetoucherProject = (props) => {
+export const GalleryWrapper = styled.div`
+width: 72%;
+height: 100%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 
-    const ImageProject = props.ImageProject;
-
-    return <>
-        <Box>
-            <BackButton/>
-            <ProjectHeader
-                headerImage={props.headerImage}
-                mainColor={props.mainColor}
-            />
-            <ProjectMainTitle
-                title={props.title}
-                titlerole={props.titlerole}
-                description={props.descriptionrole}
-                roles={props.roles}
-                lightmode={false}
-            />
-            <TemplateMethodo
-                projects={props.projects}
-                isproject
-            />
-            <BackgroundImageProject
-                bgImage={props.bgImage}
-            />
-
-            {ImageProject.map((item,index) => (
-                <TemplateImageProject
-                    key={index}
-                    sourceDesktop={item.srcDesktop}
-                    sourceMobile={item.srcMobile}
-                    breakPoint={sizes.tablet}
-                    altImage={item.altImg}
-                    bgColor={item.bgColor}
-                />
-            ))
-
-            }
-        </Box>
-    </>
-
-};
-
-export default PhotoRetoucherProject;
+`;

@@ -6,7 +6,7 @@ import {media} from "../../01 Atoms/MediaQueries";
 
 export const Box = styled.div`
 
-width: 50%;
+width: auto;
 margin-bottom: 24px;
 display: flex;
 flex-direction: column;

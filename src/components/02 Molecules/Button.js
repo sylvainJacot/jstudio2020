@@ -106,7 +106,7 @@ ${(props) => {
 
 ${(props) => {
     return (
-        props.LightMode &&
+        props.lightmode &&
         css`
         border-color: ${colorsRoles.DarkGrey};
         & > div {
@@ -130,7 +130,6 @@ font-size: 2rem;
 
 & svg {
 margin-left: 16px;
-transition: ${transitions.basic1};
 }
 \`;
 `;

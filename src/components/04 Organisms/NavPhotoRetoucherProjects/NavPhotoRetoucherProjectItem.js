@@ -3,16 +3,16 @@ import styled from "styled-components";
 import ResponsiveImage from "../../01 Atoms/ResponsiveImage";
 import {colorsRoles} from "../../01 Atoms/Colors";
 import {transitions} from "../../01 Atoms/Animations";
+import {Link} from "react-router-dom";
+import {media} from "../../01 Atoms/MediaQueries";
 
 const NavPhotoRetoucherProjectItem = (props) => {
     return <>
-        <Wrapper>
-            <PictureWrapper to={props.slug}>
+        <Wrapper to={props.slug}>
+            <PictureWrapper >
                 <ResponsiveImage
                 sourceDesktop={props.thumbnail}
                 sourceMobile={props.thumbnail}
-                breakPoint={"768"}
-                altImage={"test"}
             />
             </PictureWrapper>
             <PictureLabel>
@@ -29,7 +29,7 @@ export const PictureLabel = styled.div`
 position: absolute;
 width: 88%;
 height: 56px;
-bottom: 0px;
+bottom: -56px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -42,11 +42,16 @@ transition: ${transitions.basic1};
     font-family: PlayfairDisplay-Regular_Black;
     font-size: 2rem;
     line-height: 1.5;
+    color: ${colorsRoles.DarkGrey};
 }
+
+${media.desktop`
+bottom: 0px;
+`}
 
 `;
 
-export const Wrapper = styled.a`
+export const Wrapper = styled(Link)`
 position: relative;
 display: flex;
 flex-direction: column;
@@ -55,10 +60,12 @@ width: 320px;
 height: 320px;
 margin: 40px;
 &:hover {
+  ${media.desktop`
   ${PictureLabel} {
- bottom: -56px;
- transition: ${transitions.basic2};
-    }
+     bottom: -56px;
+     transition: ${transitions.basic2};
+        }
+    `}
 }
 
 `;
