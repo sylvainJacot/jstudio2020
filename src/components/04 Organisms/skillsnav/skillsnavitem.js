@@ -25,6 +25,7 @@ content: "";
 position: absolute;
 top:0;
 transform: translate(0,-50%);
+-webkit-transform: translate(0,-50%);
 width: 100%;
 height: 320px;
 ${backgrounds.RadialBg01};
@@ -33,6 +34,9 @@ width: 690px;
 height: 624px;
 right: 50%;
 transform: translate(50%,-50%);
+-webkit-transform: translate(50%,-50%);
+-moz-transform: translate(50%,-50%);
+-o-transform: translate(50%,-50%);
 `}
 }
 &:after {
@@ -132,15 +136,24 @@ bottom: 4%;
 right: 50%;
 z-index: 1;
 transform: translate(50%,0);
+-webkit-transform: translate(50%,0);
+-moz-transform: translate(50%,0);
+-o-transform: translate(50%,-50%);
 ${backgrounds.RadialBg02};
 ${media.desktop`
 display: block;
 animation: ${Breathe} 5s linear infinite;
+-webkit-animation: ${Breathe} 5s linear infinite;
+-moz-animation: ${Breathe} 5s linear infinite;
+-o-animation: ${Breathe} 5s linear infinite;
+
 opacity: 1;
+-moz-opacity: 1;
+
 transition: ${transitions.basic1};
--webkit-animation: ${transitions.basic1};
--moz-animation: ${transitions.basic1};
--o-animation: ${transitions.basic1};
+-webkit-transition: ${transitions.basic1};
+-moz-transition: ${transitions.basic1};
+-o-transition: ${transitions.basic1};
 `}
 ${media.desktopL`
 bottom: 2%;
@@ -183,7 +196,12 @@ left:50%;
 top: unset;
 bottom: -24%;
 transform: translate(-50%,50%);
+-webkit-transform: translate(-50%,50%);
+-moz-transform: translate(-50%,50%);
+-o-transform: translate(-50%,50%);
+
 animation: ${UpDown} 5s linear infinite;
+-webkit-animation: ${UpDown} 5s linear infinite;
 `}
 ${media.desktopL`
 width: 400px;
@@ -193,7 +211,7 @@ bottom: -32%;
 ////////////////////:hover effects
 &:hover {
     cursor: pointer;
-    transition: ${transitions.basic1}
+    transition: ${transitions.basic1};
     -webkit-transition: ${transitions.basic1};
     -moz-transition:    ${transitions.basic1};
     -o-transition:      ${transitions.basic1};
@@ -208,6 +226,7 @@ bottom: -32%;
       ${media.desktop`
         width: 560px;
         bottom: -80%;
+
       `}
     }
     ${DisciplineNavItemText} > p {

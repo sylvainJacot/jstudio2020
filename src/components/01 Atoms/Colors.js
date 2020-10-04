@@ -50,17 +50,55 @@ export const methodoColors = {
 }
 
 export const gradient = {
-    Brand0130 : `background-image: linear-gradient(0deg, ${colorsRoles.Brand01} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%`,
-    Brand0230 : `background-image: linear-gradient(0deg, ${colorsRoles.Brand02} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%`,
-    Brand0330 : `background-image: linear-gradient(0deg, ${colorsRoles.Brand03} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%`,
-    BrandSketch30 : `background-image: linear-gradient(0deg, ${methodoColors.Sketch} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%`,
-    BrandSass30 : `background-image: linear-gradient(0deg, ${methodoColors.Sass} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%`,
-    DarkGrey: `background-image: linear-gradient(-45deg, ${colorsRoles.DarkGrey} 0%, ${colorsRoles.DarkGrey2} 100%); opacity: 50%`,
+    Brand0130 : `
+    background-image: linear-gradient(0deg, ${colorsRoles.Brand01} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    -webkit-background-image: linear-gradient(0deg, ${colorsRoles.Brand01} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    -moz-background-image: linear-gradient(0deg, ${colorsRoles.Brand01} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    -o-background-image: linear-gradient(0deg, ${colorsRoles.Brand01} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    `,
+    Brand0230 : `
+    background-image: linear-gradient(0deg, ${colorsRoles.Brand02} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    -webkit-background-image: linear-gradient(0deg, ${colorsRoles.Brand02} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    -moz-background-image: linear-gradient(0deg, ${colorsRoles.Brand02} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    -o-background-image: linear-gradient(0deg, ${colorsRoles.Brand02} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    `,
+    Brand0330 : `
+    background-image: linear-gradient(0deg, ${colorsRoles.Brand03} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    -webkit-background-image: linear-gradient(0deg, ${colorsRoles.Brand03} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    -moz-background-image: linear-gradient(0deg, ${colorsRoles.Brand03} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    -o-background-image: linear-gradient(0deg, ${colorsRoles.Brand03} 0%, rgba(250,209,42,0.00) 100%); opacity: 30%;
+    `,
+    DarkGrey: `
+    background-image: linear-gradient(-45deg, ${colorsRoles.DarkGrey} 0%, ${colorsRoles.DarkGrey2} 100%); opacity: 50%;
+    -webkit-background-image: linear-gradient(-45deg, ${colorsRoles.DarkGrey} 0%, ${colorsRoles.DarkGrey2} 100%); opacity: 50%;
+    -moz-background-image: linear-gradient(-45deg, ${colorsRoles.DarkGrey} 0%, ${colorsRoles.DarkGrey2} 100%); opacity: 50%;
+    -o-background-image: linear-gradient(-45deg, ${colorsRoles.DarkGrey} 0%, ${colorsRoles.DarkGrey2} 100%); opacity: 50%;
+    `,
 }
 
 export  const backgrounds = {
-    RadialBg01 : `background-image: radial-gradient(closest-side, ${colors.PureWhite} 0%, rgba(255,255,255,0.00) 100%); opacity 30%`,
-    RadialBg02 : `background-image: radial-gradient(closest-side, ${colors.Black} 0%, rgba(45,57,43,0.00) 100%); opacity 100%`,
-    RadialBg02Transparent : `background-image: radial-gradient(closest-side, ${colors.Black} 0%, rgba(45,57,43,0.00) 100%); opacity 0%`,
+    RadialBg01 : `
+    background-image: radial-gradient(closest-side, ${colors.PureWhite} 0%, rgba(255,255,255,0.00) 100%); opacity 30%;
+    -webkit-background-image: radial-gradient(closest-side, ${colors.PureWhite} 0%, rgba(255,255,255,0.00) 100%); opacity 30%;
+    -moz-background-image: radial-gradient(closest-side, ${colors.PureWhite} 0%, rgba(255,255,255,0.00) 100%); opacity 30%;
+    -o-background-image: radial-gradient(closest-side, ${colors.PureWhite} 0%, rgba(255,255,255,0.00) 100%); opacity 30%;
+    `,
+    RadialBg02 : `
+    background-image: radial-gradient(closest-side, ${colors.Black} 0%, rgba(45,57,43,0.00) 100%); opacity 100%;
+    -webkit-background-image: radial-gradient(closest-side, ${colors.Black} 0%, rgba(45,57,43,0.00) 100%); opacity 100%;
+    -moz-background-image: radial-gradient(closest-side, ${colors.Black} 0%, rgba(45,57,43,0.00) 100%); opacity 100%
+    -o-background-image: radial-gradient(closest-side, ${colors.Black} 0%, rgba(45,57,43,0.00) 100%); opacity 100%;
+    `,
+    RadialBg02Transparent : `
+    background-image: radial-gradient(closest-side, ${colors.Black} 0%, rgba(45,57,43,0.00) 100%); opacity 0%;
+    -webkit-background-image: radial-gradient(closest-side, ${colors.Black} 0%, rgba(45,57,43,0.00) 100%); opacity 0%;
+    -moz-background-image: radial-gradient(closest-side, ${colors.Black} 0%, rgba(45,57,43,0.00) 100%); opacity 0%;
+    -o-background-image: radial-gradient(closest-side, ${colors.Black} 0%, rgba(45,57,43,0.00) 100%); opacity 0%;
+    `,
 }
+
+
+
+
+
 

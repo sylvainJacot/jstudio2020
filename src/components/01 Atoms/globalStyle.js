@@ -6,6 +6,7 @@ import {colorsRoles} from "./Colors";
 
 import RobotoRegular from "./fonts/Roboto/Roboto-Regular.woff";
 import RobotoRegular2 from "./fonts/Roboto/Roboto-Regular.woff";
+import RobotoLightItalic from "./fonts/Roboto/Roboto-LightItalic.woff";
 
 export default createGlobalStyle`
 
@@ -14,6 +15,7 @@ export default createGlobalStyle`
   font-family: 'Roboto', sans-serif;
 url(${RobotoRegular}) format('woff'),
 url(${RobotoRegular2}) format('woff2'),
+url(${RobotoLightItalic}) format ('woff'),
 font-weight: normal;
   font-style: normal;
 }
@@ -26,10 +28,11 @@ font-size: 8px;
 }
 
 body {
-background-color: ${colorsRoles.DarkGrey};
+background-color: ${colorsRoles.DarkGrey}
 `;
 
 export const fonts = {
     Roboto : "font-family: 'Roboto', sans-serif;",
+    RobotoItalic : "font-family: 'Roboto', sans-serif;",
     PlayFairDisplay : "font-family: 'Playfair Display', serif;",
 }
