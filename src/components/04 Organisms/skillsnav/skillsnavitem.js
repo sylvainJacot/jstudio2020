@@ -158,7 +158,6 @@ float: unset;
 
 & img {
     position: absolute;
-    z-index: 5;
     width: 328px;
     left: -80px;
     top: 64px;
