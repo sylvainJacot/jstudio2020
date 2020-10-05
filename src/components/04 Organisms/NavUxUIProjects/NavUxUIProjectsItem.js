@@ -53,12 +53,13 @@ width: 50%;
     `}
     
     & p {
-    font-family: Roboto-LightItalic;
+     ${fonts.RobotoItalic};
     font-size: 2rem;
     color: ${props => props.FieldTextColorVisible};
     letter-spacing: 0;
     line-height: 24px;
     margin-bottom: 8px;
+    font-style: italic;
     }
     
     & h3 {
@@ -73,7 +74,8 @@ width: 50%;
     }
     
     & h3 ~ p {
-    font-family: Roboto-Regular;
+    ${fonts.Roboto};
+    font-style: normal;
     font-size: 2rem;
     color: ${colorsRoles.White};
     letter-spacing: 0;

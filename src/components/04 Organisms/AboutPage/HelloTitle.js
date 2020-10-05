@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {colorsRoles} from "../../01 Atoms/Colors";
 import {media} from "../../01 Atoms/MediaQueries";
+import PicPerso from "../../../media/img/ProflPic.png";
 
 const HelloTitle = () => {
     return <>
@@ -56,6 +57,9 @@ position: absolute;
 width: 224px;
 height: 224px;
 background-color: ${colorsRoles.LightGrey};
+background-image: url(${PicPerso});
+background-size: contain;
+opacity: .3;
 border-radius: 50%;
 left: -112px;
 z-index: 0;
@@ -128,34 +132,6 @@ width: 360px;
 
 `;
 
-/*0% {transform: translateY(-8px);
-width: 360px;
-}
-12.5% {transform: translateY(-8px);
-width: 360px;
-}
-25% {transform: translateY(-134px);
-width: 222px;
-}
-37.5% {transform: translateY(-134px);
-width: 222px;
-}
-50% {transform: translateY(-265px);
-width: 295px;
-}
-62.5% {transform: translateY(-265px);
-width: 295px;
-}
-75% {transform: translateY(-134px);
-width: 222px;
-}
-87.5% {transform: translateY(-134px);
-width: 222px;
-}
-100% {transform: translateY(-8px);
-width: 360px;
-}
-}*/
 
 
 

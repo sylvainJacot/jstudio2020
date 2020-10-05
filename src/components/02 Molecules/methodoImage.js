@@ -4,6 +4,7 @@ import {media} from "../01 Atoms/MediaQueries";
 import {transitions} from "../01 Atoms/Animations";
 import ResponsiveImage from "../01 Atoms/ResponsiveImage";
 import {colorsRoles} from "../01 Atoms/Colors";
+import {fonts} from "../01 Atoms/globalStyle";
 
 
 export const ToolTip = styled.span`
@@ -17,7 +18,7 @@ top: 100%;
 transform: translate(-50%,50%);
 background-color: ${colorsRoles.LightGrey2};
 
-font-family: Roboto-Regular;
+${fonts.Roboto};
 font-size: 2rem;
 color: ${colorsRoles.DarkGrey};
 letter-spacing: 0;
