@@ -51,7 +51,8 @@ margin-top: 0px;
     `}
     
     & p {
-    font-family: Roboto-LightItalic;
+    ${fonts.Roboto};
+    font-style: italic;
     font-size: 2rem;
     color: ${props => props.FieldTextColorVisible};
     letter-spacing: 0;
@@ -71,7 +72,8 @@ margin-top: 0px;
     }
     
     & h3 ~ p {
-    font-family: Roboto-Regular;
+    ${fonts.Roboto};
+    font-style: normal;
     font-size: 2rem;
     color: black;
     letter-spacing: 0;
@@ -111,14 +113,9 @@ transform: translate(50%,-50%);
 border-radius: 0px 0px 16px 16px;
 z-index: -1;
 transition: ${transitions.basic2};
--webkit-animation: ${transitions.basic2};
--moz-animation: ${transitions.basic2};
--o-animation: ${transitions.basic2};
 display: flex;
 align-items: center;
 justify-content: center;
--webkit-box-shadow: -1px 11px 25px -5px ${colorsRoles.DarkGrey}20;
--moz-box-shadow: -1px 11px 25px -5px ${colorsRoles.DarkGrey}20;
 box-shadow: -1px 11px 25px -5px ${colorsRoles.DarkGrey}20;
 
 
@@ -136,7 +133,7 @@ bottom: -143px;
 `}
 
 & p {
-font-family: Roboto;
+${fonts.Roboto};
 font-weight: 600;
 font-size: 1.5rem;
 color: ${colorsRoles.LightGrey};

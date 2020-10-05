@@ -26,10 +26,6 @@ z-index: 3;
 background-color: ${props => props.isabouton ?  colorsRoles.White : colorsRoles.DarkGrey};
 padding: 0 16px;
 transition: ${transitions.basic1};
--webkit-animation: ${transitions.basic1};
--moz-animation: ${transitions.basic1};
--o-animation: ${transitions.basic1};
-
 ${media.desktop `
 width: 80px;
 height: unset;
@@ -55,16 +51,10 @@ ${media.desktop `
     &:hover {
 width: 144px;
 transition: ${transitions.basic2};
--webkit-animation: ${transitions.basic2};
--moz-animation: ${transitions.basic2};
--o-animation: ${transitions.basicé};
 
   & div > span {
   height: 32px;
   transition: ${transitions.basic1};
-    -webkit-animation: ${transitions.basic1};
-    -moz-animation: ${transitions.basic1};
-    -o-animation: ${transitions.basic1};
   transition-delay: .1s;
    &:nth-child(2) {
    margin: 0 16px;
@@ -141,13 +131,13 @@ const HeaderNavigation = (props) => {
             <IcBurgerMenu onClick={HandleToggle} isabouton={menuColor}/>
 
             <SocialsWrapper>
-                <a href="https://www.linkedin.com/in/sylvain-jacot">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sylvain-jacot">
                     <IcLinkedin FillColor={menuColor} Size={"24px"}/>
                 </a>
-                <a href="https://www.instagram.com/el_jacot/">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/el_jacot/">
                     <IcInstagram FillColor={menuColor} Size={"24px"}/>
                 </a>
-                <a href="https://wa.me/<number>">
+                <a target="_blank" rel="noopener noreferrer" href="https://wa.link/l3orm8">
                     <IcWhatsapp FillColor={menuColor} Size={"24px"}/>
                 </a>
             </SocialsWrapper>

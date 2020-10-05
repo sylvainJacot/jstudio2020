@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {transitions} from "./Animations";
 import {media} from "./MediaQueries";
+import {fonts} from "./globalStyle";
 
 
 export const SpanWrapper = styled.div``;
@@ -50,12 +51,13 @@ margin-bottom: 8px;
 display: none;
 ${media.desktop`
 display: inline;
-font-family: Roboto-Bold;
+font-family: ${fonts.Roboto};
 font-size: 2rem;
 color: ${props => props.isabouton};
 letter-spacing: 4px;
 text-align: center;
 text-transform: uppercase;
+font-weight: bold;
 `}
 }
 `;

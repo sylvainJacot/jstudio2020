@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {colorsRoles} from "../../01 Atoms/Colors";
 import {media} from "../../01 Atoms/MediaQueries";
+import {fonts} from "../../01 Atoms/globalStyle";
 
 
 export const Box = styled.div`
@@ -14,7 +15,8 @@ align-items: center;
 flex-wrap: nowrap;
 
 & h5 {
-font-family: Roboto-Bold;
+${fonts.RobotoBold};
+font-weight: bold;
 font-size: 2rem;
 color: ${colorsRoles.DarkGrey};
 text-align: center;
@@ -23,7 +25,7 @@ line-height: 1.5;
 
 & p {
 width: 288px;
-font-family: Roboto-Regular;
+${fonts.Roboto};
 font-size: 2rem;
 color: ${colorsRoles.DarkGrey2};
 letter-spacing: 0;
