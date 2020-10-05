@@ -1,13 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 import {colorsRoles} from "../../../01 Atoms/Colors";
-
+import CodeSandBoxItem from "./CodeSandBoxItem";
+import {fonts} from "../../../01 Atoms/globalStyle";
+import CodeSandBox from "../../../../media/icons/methodology/code-sandbox.svg";
+import {codesandboxes} from "../../../01 Atoms/codesandboxes";
 
 const CodeSandboxes = () => {
     return <>
         <Wrapper>
             <h2>CodeSanbox section</h2>
+            <CodeSandoxItems>
+                {
+                    codesandboxes.map((item,index) => (
+                        <CodeSandBoxItem
+                            key={index}
+                            href={item.href}
+                            src={item.src}
+                            alt={item.alt}
+                            label={item.name}
+                        />
+                    ))
 
+                };
+            </CodeSandoxItems>
         </Wrapper>
 
     </>
@@ -17,14 +33,37 @@ const CodeSandboxes = () => {
 export default CodeSandboxes;
 
 export const Wrapper = styled.div`
-background-color: ${colorsRoles.Black};
+background-color: ${colorsRoles.LightGrey2};
+text-align: center;
+
+    & h2 {
+    position: relative;
+    display: inline-block;
+    ${fonts.RobotoBold};
+    font-weight: 800;
+    font-size: 5rem;
+    text-align: center;
+    padding: 40px 0;
+    
+        &::before{
+          position: absolute;
+          content: "";
+          display: block;
+          width: 40px;
+          height: 40px;
+          background-image: url(${CodeSandBox});
+          background-size: contain;
+          background-repeat: no-repeat;
+          left: -56px;
+
+        }
+    
+    }
+
 `;
 
-
-export const Iframe = styled.iframe`
-width:500px; 
-height:500px; 
-border:0; 
-border-radius: 4px; 
-overflow:hidden;"
+export const CodeSandoxItems = styled.div`
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
 `;

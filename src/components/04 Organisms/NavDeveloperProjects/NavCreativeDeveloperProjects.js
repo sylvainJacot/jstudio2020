@@ -5,6 +5,8 @@ import NavCreativeDeveloperProjectItem from "./NavCreativeDeveloperProjectItem";
 import {CreativeDeveloperProjects} from "../../01 Atoms/Data";
 import {useRouteMatch} from "react-router-dom";
 import {media} from "../../01 Atoms/MediaQueries";
+import CodeSandboxes from "./CodeSandboxes/CodeSandboxes";
+
 
 const NavCreativeDeveloperProjects = () => {
     let { url } = useRouteMatch();
@@ -27,6 +29,9 @@ const NavCreativeDeveloperProjects = () => {
         }
 
     </NavCreativeDeveloperProjectsWrapper>
+
+     <CodeSandboxes/>
+
     </>
 
 };

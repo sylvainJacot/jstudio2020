@@ -22,7 +22,7 @@ import {
     Git,
     Bootsrap,
     CSS3,
-    Javascript, CoffeeBreak, Streching, LightRoom, Wacom, GraphicTablet, CrossBrowsersTesting
+    Javascript, CoffeeBreak, Streching, LightRoom, GraphicTablet, CrossBrowsersTesting
 } from "./Icons-Methodo";
 import {
     AlmahaProject,

@@ -43,7 +43,6 @@ const CreativeDeveloperProjects = () => {
                 iscreativedeveloper
             />
             <NavCreativeDeveloperProjects/>
-            <CodeSandboxes />
         </Box>
 
     </>
