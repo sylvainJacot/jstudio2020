@@ -22,7 +22,7 @@ import {
     Git,
     Bootsrap,
     CSS3,
-    Javascript, CoffeeBreak, Streching, LightRoom, Wacom, GraphicTablet, CrossBrowsersTesting
+    Javascript, CoffeeBreak, Streching, LightRoom, GraphicTablet, CrossBrowsersTesting
 } from "./Icons-Methodo";
 import {
     AlmahaProject,
@@ -32,9 +32,6 @@ import {
     TheHotelProject,
     WTFPorject
 } from "./Images-Retoucher";
-import CrossBrowsersTestingLogo from "../../media/icons/methodology/CrossBrowser.svg";
-import PictureComponent from "../04 Organisms/projectitem/PictureComponent";
-
 
 export const pathuiux = "/ux-ui-designer";
 export const pathdev = "/creative-developer";

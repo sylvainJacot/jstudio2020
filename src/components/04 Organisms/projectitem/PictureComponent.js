@@ -26,7 +26,7 @@ const PictureComponent = (props) => {
                 rectanglelandscape={props.rectanglelandscape}
                 rectangleportrait={props.rectangleportrait}
             >
-                <img src={props.src}/>
+                <img src={props.src} alt={props.alt}/>
             </AspectRatio>
             <LightBoxPicture
                 onClick={handleOnClick}

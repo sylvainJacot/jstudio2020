@@ -14,14 +14,13 @@ width: 100%;
 height: 800px;
 display: flex;
 flex-direction: column-reverse;
-margin-bottom: 40px;
+padding-bottom: 40px;
 align-items: center;
-
-${media.desktop`
-height: 500px;
-flex-direction: row;
-align-items: unset;
-`}
+    ${media.desktop`
+        height: 500px;
+        flex-direction: row;
+        align-items: unset;
+    `}
 `;
 
 export const LeftContent = styled.div`
@@ -181,9 +180,6 @@ background: linear-gradient(to bottom, transparent, ${colorsRoles.DarkGrey});
 filter: blur(3px);
 opacity: .4;
 transition: ${transitions.basic1};
--webkit-animation: ${transitions.basic1};
--moz-animation: ${transitions.basic1};
--o-animation: ${transitions.basic1};
 }
 
 :before {
@@ -205,9 +201,6 @@ ${media.desktop`
     ${ToolsBoxProject} {
     bottom: -143px;
     transition: ${transitions.basic1};
-    -webkit-animation: ${transitions.basic1};
-    -moz-animation: ${transitions.basic1};
-    -o-animation: ${transitions.basic1};
     } 
 }
 `}

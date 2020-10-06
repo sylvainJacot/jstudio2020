@@ -1,5 +1,4 @@
 import SketchLogo from "../../media/icons/methodology/Sketch.svg";
-import EightGridLogo from "../../media/icons/methodology/8pt.svg"
 import AtomicDesignLogo from "../../media/icons/methodology/atomicdesign.svg";
 import RawSketchLogo from "../../media/icons/methodology/rawSketch.svg";
 import InvisionLogo from "../../media/icons/methodology/invision.svg";
@@ -24,16 +23,12 @@ import StretchingLogo from "../../media/icons/methodology/Streching.svg";
 import LightRoomLogo from "../../media/icons/methodology/LightRoomClassic.svg";
 import GraphicTabletLogo from "../../media/icons/methodology/GraphicTablet.svg";
 import CrossBrowsersTestingLogo from "../../media/icons/methodology/CrossBrowser.svg";
+import CodeSandBoxLogo from "../../media/icons/methodology/code-sandbox.svg";
 
 export const Sketch = {
     title: "Sketch",
     altImage: "Sketch logo",
     logo: SketchLogo,
-}
-export const EightPoint = {
-    title: "8 point design",
-    altImage: "8 point design",
-    logo: EightGridLogo,
 }
 export const AtomicDesign = {
     title: "Atomic design",
@@ -155,3 +150,10 @@ export const CrossBrowsersTesting = {
     altImage: "Cross Browsers Testing logo",
     logo: CrossBrowsersTestingLogo,
 }
+
+export const CodeSandBox = {
+    title: "CodeSandBox",
+    altImage: "CodeSandBox logo",
+    logo: CodeSandBoxLogo,
+}
+

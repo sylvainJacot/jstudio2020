@@ -155,12 +155,28 @@ p {
 `}
 }
 `;
-
+export const Clients = styled.div`
+text-align: center;
+padding: 40px 0px;
+width: 90%;
+margin: auto;
+     & p {
+         ${fonts.Roboto};
+         color: ${colorsRoles.White};
+         font-size: 2rem;
+         margin-bottom: 24px;
+         opacity: .6;
+     }
+     ${media.desktop`
+         padding: 80px 0px;
+     `}
+ 
+`;
 export const LogoItemWrapper = styled.div`
 position: relative;
 width: 64px;
 height: 64px;
-margin-left: 16px;
+margin-left: 32px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -175,32 +191,16 @@ margin-left: 40px;
 `;
 
 export const LogosWrapper = styled.div`
-width: 100%;
+position: relative;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-padding-bottom: 32px;
-margin-bottom: 16px;
-opacity: .6;
-
-${media.tablet`
-margin-top: 40px;
-margin-bottom: 48px;
-padding-bottom: 0px;
-`}
-${media.desktop`
-margin-top: 80px;
-`}
-& img {
-width: auto;
-max-width: 64px;
-max-height: 32px;
-fill: ${colorsRoles.White};
-
-}
-
-
-
+    & img {
+        width: auto;
+        max-width: 80px;
+        max-height: 48px;
+        fill: ${colorsRoles.White};
+    }
 `;
 
 
@@ -218,27 +218,29 @@ const Skillheader = (props) => {
                         <p>{props.description}</p>
                     </TextContent>
                 </HeaderMain>
-                <LogosWrapper>
+                <Clients>
+                    <p>Collaborated with</p>
+                    <LogosWrapper>
+                        {
+                            props.ClientsUXUI && ClientsUXUI.map((item, index) => (
+                                <LogoItemWrapper key={index}><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
+                            ))
+                        }
 
-                    {
-                        props.ClientsUXUI && ClientsUXUI.map((item, index) => (
-                            <LogoItemWrapper key={index}><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
-                        ))
-                    }
+                        {
+                            props.ClientsDeveloper && ClientsDeveloper.map((item,index) => (
+                                <LogoItemWrapper key={index}><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
+                            ))
+                        }
 
-                    {
-                        props.ClientsDeveloper && ClientsDeveloper.map((item,index) => (
-                            <LogoItemWrapper key={index}><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
-                        ))
-                    }
+                        {
+                            props.ClientsRetoucher && ClientsRetoucher.map((item, index) => (
+                                <LogoItemWrapper key={index}><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
+                            ))
+                        }
 
-                    {
-                        props.ClientsRetoucher && ClientsRetoucher.map((item, index) => (
-                            <LogoItemWrapper key={index}><img src={item.src} alt={item.altimg}/></LogoItemWrapper>
-                        ))
-                    }
-
-                </LogosWrapper>
+                    </LogosWrapper>
+                </Clients>
             </HeaderWrapper>
     </>
 
