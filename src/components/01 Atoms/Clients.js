@@ -11,6 +11,7 @@ import FredSablonLogo from "../../media/icons/clients/FredSablon.svg";
 import ClioGolbrennerLogo from "../../media/icons/clients/ClioGoldbrenner.png";
 import EatBxlLogo from "../../media/icons/clients/EatBxl.svg";
 import HiltonLogo from "../../media/icons/clients/Hilton.svg";
+import WTFLogo from "../../media/icons/clients/wtf.png";
 
 export const ClientsUXUI = [
     {altimg: "Samsung client", src: SamsungLogo},
@@ -35,5 +36,6 @@ export const ClientsRetoucher = [
     {altimg: "Clio Golbrenner", src: ClioGolbrennerLogo},
     {altimg: "Eat Brussels", src: EatBxlLogo},
     {altimg: "Hilton", src: HiltonLogo},
+    {altimg: "What The Fun Comedy CLub", src: WTFLogo},
 ]
 
