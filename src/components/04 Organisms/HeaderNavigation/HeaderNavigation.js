@@ -159,7 +159,7 @@ const HeaderNavigation = (props) => {
                     <a target="_blank" rel="noopener noreferrer" href="https://wa.link/l3orm8">
                         <IcWhatsapp FillColor={menuColor} Size={"24px"}/>
                     </a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://wa.link/l3orm8">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/sylvainJacot">
                         <IcGitHub FillColor={menuColor} Size={"24px"}/>
                     </a>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/el_jacot/">
