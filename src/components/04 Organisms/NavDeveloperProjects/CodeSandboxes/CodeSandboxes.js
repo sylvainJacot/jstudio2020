@@ -5,11 +5,12 @@ import CodeSandBoxItem from "./CodeSandBoxItem";
 import {fonts} from "../../../01 Atoms/globalStyle";
 import CodeSandBox from "../../../../media/icons/methodology/code-sandbox.svg";
 import {codesandboxes} from "../../../01 Atoms/codesandboxes";
+import {media} from "../../../01 Atoms/MediaQueries";
 
 const CodeSandboxes = () => {
     return <>
         <Wrapper>
-            <h2>CodeSanbox section</h2>
+            <h2>CodeSanbox Section</h2>
             <CodeSandoxItems>
                 {
                     codesandboxes.map((item,index) => (
@@ -38,6 +39,7 @@ text-align: center;
 padding: 80px 0px;
 
     & h2 {
+    width: 50%;
     position: relative;
     display: inline-block;
     ${fonts.RobotoBold};
@@ -45,6 +47,10 @@ padding: 80px 0px;
     font-size: 5rem;
     text-align: center;
     padding: 40px 0;
+    line-height: 1.3;
+    ${media.tablet`
+    width: unset;
+    `};
     
         &::before{
           position: absolute;
