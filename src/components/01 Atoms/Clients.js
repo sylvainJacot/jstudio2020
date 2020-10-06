@@ -9,6 +9,8 @@ import SoSmartLogo from "../../media/icons/clients/SoSmart.png";
 import ParentrepriseLogo from "../../media/icons/clients/Parentreprise.svg";
 import FredSablonLogo from "../../media/icons/clients/FredSablon.svg";
 import ClioGolbrennerLogo from "../../media/icons/clients/ClioGoldbrenner.png";
+import EatBxlLogo from "../../media/icons/clients/EatBxl.svg";
+import HiltonLogo from "../../media/icons/clients/Hilton.svg";
 
 export const ClientsUXUI = [
     {altimg: "Samsung client", src: SamsungLogo},
@@ -31,5 +33,7 @@ export const ClientsDeveloper = [
 export const ClientsRetoucher = [
     {altimg: "Fred Sablon Photographer", src: FredSablonLogo},
     {altimg: "Clio Golbrenner", src: ClioGolbrennerLogo},
+    {altimg: "Eat Brussels", src: EatBxlLogo},
+    {altimg: "Hilton", src: HiltonLogo},
 ]
 

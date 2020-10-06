@@ -15,7 +15,6 @@ const Box = {
 const NavUxUIProjects = (props) => {
 
     const [bgColor, setbgColor] = useState("");
-    const [YPos, setYPos] = useState(0);
     const myRef = useRef();
 
 
@@ -45,9 +44,6 @@ const NavUxUIProjects = (props) => {
         const Bg2 = projectColors.Samsung;
         const Bg3 = projectColors.Kia;
         const Bg4 = projectColors.Telenet;
-
-        setYPos(lastScrollY);
-
 
 
         if (MediaQueryDesktop.matches) {

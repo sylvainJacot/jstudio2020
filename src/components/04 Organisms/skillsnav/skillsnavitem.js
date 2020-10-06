@@ -3,10 +3,9 @@ import styled from "styled-components";
 import {NavLink} from "react-router-dom";
 import {fonts} from "../../01 Atoms/globalStyle";
 import {media} from "../../01 Atoms/MediaQueries";
-import {transitions, Breathe, UpDown, updownsec} from "../../01 Atoms/Animations";
+import {transitions, Breathe, UpDown} from "../../01 Atoms/Animations";
 import {colorsRoles, gradient, backgrounds} from "../../01 Atoms/Colors";
 import Button from "../../02 Molecules/Button";
-
 
 export const DisciplineNavItemWrapper = styled.li`
 position: relative;

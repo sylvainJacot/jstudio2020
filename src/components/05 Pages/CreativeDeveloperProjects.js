@@ -8,7 +8,6 @@ import {media} from "../01 Atoms/MediaQueries";
 import {SkillsAnimals} from "../01 Atoms/Images-UXUI";
 import TemplateMethodo from "../04 Organisms/skillpage/TemplateMethodo";
 import NavCreativeDeveloperProjects from "../04 Organisms/NavDeveloperProjects/NavCreativeDeveloperProjects";
-import CodeSandboxes from "../04 Organisms/NavDeveloperProjects/CodeSandboxes/CodeSandboxes";
 import BackButton from "../02 Molecules/BackButton";
 
 

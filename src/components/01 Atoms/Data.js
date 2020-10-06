@@ -32,9 +32,6 @@ import {
     TheHotelProject,
     WTFPorject
 } from "./Images-Retoucher";
-import CrossBrowsersTestingLogo from "../../media/icons/methodology/CrossBrowser.svg";
-import PictureComponent from "../04 Organisms/projectitem/PictureComponent";
-
 
 export const pathuiux = "/ux-ui-designer";
 export const pathdev = "/creative-developer";

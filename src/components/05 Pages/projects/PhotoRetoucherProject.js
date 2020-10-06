@@ -6,7 +6,6 @@ import ProjectMainTitle from "../../04 Organisms/projectitem/ProjectMainTitle";
 import BackButton from "../../02 Molecules/BackButton";
 import PhotoProjectHeader from "../../04 Organisms/projectitem/PhotoProjectHeader";
 import PictureComponent from "../../04 Organisms/projectitem/PictureComponent";
-import LightBoxPicture from "../../04 Organisms/projectitem/LightBoxPicture";
 
 
 

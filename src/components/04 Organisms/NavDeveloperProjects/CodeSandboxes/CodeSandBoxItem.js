@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import {colorsRoles} from "../../../01 Atoms/Colors";
-import Test from "../../../../media/img/Projects/02_Creative Developer/ToDoList.png";
 import {fonts} from "../../../01 Atoms/globalStyle";
 import {transitions} from "../../../01 Atoms/Animations";
 
@@ -43,7 +42,7 @@ position: relative;
 width: 240px;
 height: 160px;
 background-color: ${colorsRoles.DarkGrey};
-border-radius: 16px 16px 0 0;
+border-radius: 16px;
 overflow: hidden;
 cursor: pointer;
 margin: 16px;
