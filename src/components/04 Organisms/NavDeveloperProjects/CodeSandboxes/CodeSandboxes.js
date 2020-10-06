@@ -35,6 +35,7 @@ export default CodeSandboxes;
 export const Wrapper = styled.div`
 background-color: ${colorsRoles.LightGrey2};
 text-align: center;
+padding: 80px 0px;
 
     & h2 {
     position: relative;
