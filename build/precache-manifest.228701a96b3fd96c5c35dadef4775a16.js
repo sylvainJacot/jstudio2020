@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "28d76934f5fcfce3ba0932bfea466496",
+    "revision": "4168f66965bd131cad0f687ccc71bb04",
     "url": "/index.html"
   },
   {
-    "revision": "e221777b78e6ca2e6e72",
+    "revision": "84e229e30b5730bf938d",
     "url": "/static/css/main.2160750c.chunk.css"
   },
   {
-    "revision": "6c238219e102de04866c",
-    "url": "/static/js/2.06b2ee72.chunk.js"
+    "revision": "361802bfd67e0b333abb",
+    "url": "/static/js/2.23da7beb.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.06b2ee72.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.23da7beb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e221777b78e6ca2e6e72",
-    "url": "/static/js/main.8016e021.chunk.js"
+    "revision": "84e229e30b5730bf938d",
+    "url": "/static/js/main.cd5ecb6c.chunk.js"
   },
   {
     "revision": "da903b2984fdcfa129a5",
@@ -72,10 +72,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/241_EATBXL_FOOD_Thumbnail.00e6bdc9.png"
   },
   {
-    "revision": "0e96eed9a24fd0dd89071e63b6b3f38f",
-    "url": "/static/media/8pt.0e96eed9.svg"
-  },
-  {
     "revision": "73960f324b365a15f32b35bba679d79d",
     "url": "/static/media/AgileDeve.73960f32.svg"
   },
@@ -110,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f5b8ee19209e65420fdbef9e1fd9c160",
     "url": "/static/media/DecorativePicture.f5b8ee19.png"
+  },
+  {
+    "revision": "b8ed3cdcfce11b428f2823bc8fc60057",
+    "url": "/static/media/EatBxl.b8ed3cdc.svg"
   },
   {
     "revision": "822c9990d5ed9c91d2abbf7616e46b61",
@@ -198,6 +198,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "051bad317cda147a2b5c632d1a8f437b",
     "url": "/static/media/H_Almaha-Thumbnail.051bad31.png"
+  },
+  {
+    "revision": "cb34d474abfbee1f4c95ac93fae6bf0f",
+    "url": "/static/media/Hilton.cb34d474.svg"
   },
   {
     "revision": "4370b06cedc7a4fd63cf1f482df5a9c4",
@@ -436,6 +440,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Telenetfolio01.d843bad5.gif"
   },
   {
+    "revision": "62f225ed91e83c94445af769eddd6dec",
+    "url": "/static/media/ToDoList.62f225ed.png"
+  },
+  {
     "revision": "ae605d9747a2b2dacd45ce09b1a4863e",
     "url": "/static/media/Trello.ae605d97.svg"
   },
@@ -506,6 +514,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4c51e0c94dfb37e9cb1ca8d4663c0693",
     "url": "/static/media/clavie_thumbnail.4c51e0c9.png"
+  },
+  {
+    "revision": "251dc817d7af9150c85d6d1fb9aaa061",
+    "url": "/static/media/code-sandbox.251dc817.svg"
   },
   {
     "revision": "a92a190d4af88748519259855e12f747",

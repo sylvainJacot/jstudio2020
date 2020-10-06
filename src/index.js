@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, HashRouter} from 'react-router-dom';
 
 
 import './index.css';
@@ -17,10 +17,12 @@ setTimeout(console.log.bind(console, "%cDesigned and developed by Jacot Sylvain"
 ));
 
 ReactDOM.render(
+    <HashRouter>
         <Router>
             <ScrollToTop />
             <App />
         </Router>
+    </HashRouter>
 ,
     document.getElementById('root')
 );
