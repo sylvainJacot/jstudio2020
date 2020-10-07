@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.2160750c.chunk.css",
-    "main.js": "/static/js/main.cd5ecb6c.chunk.js",
-    "main.js.map": "/static/js/main.cd5ecb6c.chunk.js.map",
+    "main.js": "/static/js/main.a2dd678c.chunk.js",
+    "main.js.map": "/static/js/main.a2dd678c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4749a357.js",
     "runtime-main.js.map": "/static/js/runtime-main.4749a357.js.map",
-    "static/js/2.23da7beb.chunk.js": "/static/js/2.23da7beb.chunk.js",
-    "static/js/2.23da7beb.chunk.js.map": "/static/js/2.23da7beb.chunk.js.map",
+    "static/js/2.9b8b981c.chunk.js": "/static/js/2.9b8b981c.chunk.js",
+    "static/js/2.9b8b981c.chunk.js.map": "/static/js/2.9b8b981c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.228701a96b3fd96c5c35dadef4775a16.js": "/precache-manifest.228701a96b3fd96c5c35dadef4775a16.js",
+    "precache-manifest.cff39d30cccc274203638c95a5c28891.js": "/precache-manifest.cff39d30cccc274203638c95a5c28891.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.2160750c.chunk.css.map": "/static/css/main.2160750c.chunk.css.map",
-    "static/js/2.23da7beb.chunk.js.LICENSE.txt": "/static/js/2.23da7beb.chunk.js.LICENSE.txt",
+    "static/js/2.9b8b981c.chunk.js.LICENSE.txt": "/static/js/2.9b8b981c.chunk.js.LICENSE.txt",
     "static/media/001_EATBXL_FOODDUO_BAO.png": "/static/media/001_EATBXL_FOODDUO_BAO.93bc833c.png",
     "static/media/021_EATBXL_FOOD_ChampignonSansaru.png": "/static/media/021_EATBXL_FOOD_ChampignonSansaru.0ad7d143.png",
     "static/media/041_EATBXL_FOOD_Fromages_Arpin.png": "/static/media/041_EATBXL_FOOD_Fromages_Arpin.dabc35e0.png",
@@ -161,12 +161,13 @@
     "static/media/styledcomponents.png": "/static/media/styledcomponents.e4eb0823.png",
     "static/media/thumbnail-Parentreprise.png": "/static/media/thumbnail-Parentreprise.60f192eb.png",
     "static/media/web-design.svg": "/static/media/web-design.f3c4dc23.svg",
+    "static/media/wtf.png": "/static/media/wtf.7391cd56.png",
     "static/media/zeplin.svg": "/static/media/zeplin.70396daf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4749a357.js",
-    "static/js/2.23da7beb.chunk.js",
+    "static/js/2.9b8b981c.chunk.js",
     "static/css/main.2160750c.chunk.css",
-    "static/js/main.cd5ecb6c.chunk.js"
+    "static/js/main.a2dd678c.chunk.js"
   ]
 }
