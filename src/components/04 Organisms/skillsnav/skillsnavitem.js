@@ -166,7 +166,6 @@ float: unset;
         top: 0;
     `}   
     ${media.desktop`
-        width: 360px;
         left:50%;
         bottom: -24%;
         animation: ${UpDown} 5s linear infinite;
