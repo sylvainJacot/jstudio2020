@@ -12,6 +12,7 @@ import ClioGolbrennerLogo from "../../media/icons/clients/ClioGoldbrenner.png";
 import EatBxlLogo from "../../media/icons/clients/EatBxl.svg";
 import HiltonLogo from "../../media/icons/clients/Hilton.svg";
 import WTFLogo from "../../media/icons/clients/wtf.png";
+import SheratonLogo from "../../media/icons/clients/Sheraton.svg";
 
 export const ClientsUXUI = [
     {altimg: "Samsung client", src: SamsungLogo},
@@ -37,5 +38,6 @@ export const ClientsRetoucher = [
     {altimg: "Eat Brussels", src: EatBxlLogo},
     {altimg: "Hilton", src: HiltonLogo},
     {altimg: "What The Fun Comedy CLub", src: WTFLogo},
+    {altimg: "Sheraton Hotels and resorts", src: SheratonLogo},
 ]
 
